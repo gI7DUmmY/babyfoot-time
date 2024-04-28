@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    domains: ['pexels.com', 'localhost:1337', 'firebasestorage.googleapis.com'],
+  },
+}
 
-export default nextConfig;
+export default nextConfig
