@@ -2,20 +2,18 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 const Services = () => {
   return (
-    <section className='w-full flex flex-col justify-center gap-2 p-1'>
+    <section className='w-full flex flex-col justify-center gap-2 p-1 md:grid md:grid-cols-2'>
       <Card>
         <CardHeader>
           <CardTitle>pour votre entreprise</CardTitle>
         </CardHeader>
         <CardContent>
-          <p>
-            <ul>
-              <li>fédérer</li>
-              <li>créer du lien</li>
-              <li>communiquer</li>
-              <li>challenger</li>
-            </ul>
-          </p>
+          <ul>
+            <li>fédérer</li>
+            <li>créer du lien</li>
+            <li>communiquer</li>
+            <li>challenger</li>
+          </ul>
         </CardContent>
       </Card>
 
@@ -24,11 +22,15 @@ const Services = () => {
           <CardTitle>pour vos soirées privées</CardTitle>
         </CardHeader>
         <CardContent>
-          <p>s'amuser, favoriser les échanges, se défouler</p>
+          <ul>
+            <li>s'amuser</li>
+            <li>favoriser les échanges</li>
+            <li>se défouler</li>
+          </ul>
         </CardContent>
       </Card>
 
-      <Card>
+      <Card className='col-span-2'>
         <CardHeader>
           <CardTitle>louez</CardTitle>
         </CardHeader>
@@ -45,14 +47,12 @@ const Services = () => {
           <CardTitle>personnalisez</CardTitle>
         </CardHeader>
         <CardContent>
-          <p>
-            <ul>
-              <li>votre tournoi</li>
-              <li>des défis</li>
-              <li>des stages</li>
-              <li>du freeplay</li>
-            </ul>
-          </p>
+          <ul>
+            <li>votre tournoi</li>
+            <li>des défis</li>
+            <li>des stages</li>
+            <li>du freeplay</li>
+          </ul>
         </CardContent>
       </Card>
 
@@ -61,14 +61,12 @@ const Services = () => {
           <CardTitle>nous gérons</CardTitle>
         </CardHeader>
         <CardContent>
-          <p>
-            <ul>
-              <li>transport</li>
-              <li>montage</li>
-              <li>réglages</li>
-              <li>démontage</li>
-            </ul>
-          </p>
+          <ul>
+            <li>transport</li>
+            <li>montage</li>
+            <li>réglages</li>
+            <li>démontage</li>
+          </ul>
         </CardContent>
       </Card>
     </section>
