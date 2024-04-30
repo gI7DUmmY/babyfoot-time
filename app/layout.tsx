@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { playfair_display, playfair, lora, yellowtail, opensans } from './fonts'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Babyfoot Time',
@@ -35,7 +33,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${playfair_display.variable} ${playfair.variable} ${lora.variable} ${yellowtail.variable} ${opensans.variable}`}
+      >
+        {children}
+      </body>
     </html>
   )
 }

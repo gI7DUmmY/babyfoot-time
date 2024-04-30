@@ -65,6 +65,13 @@ const config = {
           foreground: 'rgb(var(--card-foreground))',
         },
       },
+      fontFamily: {
+        display: ['var(--font-playfair-display)'],
+        playfair: ['var(--font-playfair)'],
+        lora: ['var(--font-lora)'],
+        yellowtail: ['var(--font-yellow-tail)'],
+        opensans: ['var(--font-open-sans)'],
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
