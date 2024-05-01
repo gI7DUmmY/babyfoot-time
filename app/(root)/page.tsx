@@ -7,8 +7,8 @@ import { Socials } from '@/components/Socials'
 
 export default function Home() {
   return (
-    <main className=''>
-      <section className='fixed top-0 left-0 w-full bg-black'>
+    <main className='select-none'>
+      <section className='fixed top-0 left-0 w-full'>
         <Image
           src={banniere}
           alt='banniere babyfoot time'
@@ -23,8 +23,14 @@ export default function Home() {
 
       <Socials />
 
-      <section className='mt-8 text-center'>
-        <p>Copyright ©️ 2024 Babyfoot Time | Tous Doits Réservés</p>
+      <section className='mt-8 mb-2 text-center'>
+        <p>
+          Copyright ©️ 2024 Babyfoot Time
+          <span className='md:hidden'>
+            <br />
+          </span>
+          <span className='hidden md:inline'> | </span>Tous Doits Réservés
+        </p>
       </section>
     </main>
   )

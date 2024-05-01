@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { playfair_display, playfair, lora, yellowtail, opensans } from './fonts'
+import { playfair_display, playfair, lora } from './fonts'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${playfair_display.variable} ${playfair.variable} ${lora.variable} ${yellowtail.variable} ${opensans.variable}`}
+        className={`${playfair_display.variable} ${playfair.variable} ${lora.variable}`}
       >
         {children}
       </body>

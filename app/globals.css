@@ -7,10 +7,10 @@
     --color-orange1: 252 151 0;
     --color-orange2: 255 145 77;
 
-    --background: 0 0 0;
+    --background: 1 1 1;
     --foreground: 255 255 255;
 
-    --card: 0 0 0;
+    --card: 1 1 1;
     --card-foreground: 255 255 255;
 
     --popover: 0 0% 100%;
@@ -39,11 +39,11 @@
   }
 
   .dark {
-    --background: black;
-    --foreground: white;
+    --background: 1 1 1;
+    --foreground: 255 255 255;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 1 1 1;
+    --card-foreground: 255 255 255;
 
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
@@ -74,6 +74,10 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.icon {
+  @apply cursor-pointer hover:animate-bounce;
 }
 
 .parallax {

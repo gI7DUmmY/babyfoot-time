@@ -4,7 +4,7 @@ import event from '@/public/assets/images/event_orange1.png'
 const Titre = () => {
   return (
     <section className='parallax mt-36 h-[85vh] md:mt-52 lg:mt-60' id='titre'>
-      <h1 className='text-2xl text-center uppercase pt-6 px-2 font-yellowtail'>
+      <h1 className='text-2xl text-center uppercase pt-6 px-2 font-display font-extrabold'>
         spécialiste de l'animation autour du{' '}
         <span className='text-orange1'>baby-foot</span>
       </h1>
