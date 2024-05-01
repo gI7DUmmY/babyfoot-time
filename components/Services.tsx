@@ -1,11 +1,25 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
+
+import { IoBusiness, IoTimer } from 'react-icons/io5'
+import { GiPalette, GiPartyPopper } from 'react-icons/gi'
+import { FaHandshake } from 'react-icons/fa6'
 
 const Services = () => {
   return (
     <section className='w-full flex flex-col justify-center gap-2 p-1 md:grid md:grid-cols-2'>
       <Card>
         <CardHeader>
-          <CardTitle>pour votre entreprise</CardTitle>
+          <CardTitle>
+            <IoBusiness className='mx-auto' />
+            pour votre entreprise
+          </CardTitle>
+          <CardDescription></CardDescription>
         </CardHeader>
         <CardContent>
           <ul>
@@ -19,20 +33,26 @@ const Services = () => {
 
       <Card>
         <CardHeader>
-          <CardTitle>pour vos soirées privées</CardTitle>
+          <CardTitle>
+            <GiPartyPopper className='mx-auto' /> pour vos soirées privées
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <ul>
             <li>s'amuser</li>
             <li>favoriser les échanges</li>
             <li>se défouler</li>
+            <li>partager</li>
           </ul>
         </CardContent>
       </Card>
 
       <Card className='col-span-2'>
         <CardHeader>
-          <CardTitle>louez</CardTitle>
+          <CardTitle>
+            <IoTimer className='mx-auto' />
+            louez
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <p>
@@ -44,7 +64,10 @@ const Services = () => {
 
       <Card>
         <CardHeader>
-          <CardTitle>personnalisez</CardTitle>
+          <CardTitle>
+            <GiPalette className='mx-auto' />
+            personnalisez
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <ul>
@@ -58,7 +81,10 @@ const Services = () => {
 
       <Card>
         <CardHeader>
-          <CardTitle>nous gérons</CardTitle>
+          <CardTitle>
+            <FaHandshake className='mx-auto' />
+            nous gérons
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <ul>
