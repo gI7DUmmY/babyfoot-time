@@ -3,12 +3,12 @@ import banniere from '@/public/assets/images/logo2.svg'
 
 import Titre from '@/components/Titre'
 import Services from '@/components/Services'
-import { Socials } from '@/components/Socials'
+import Socials from '@/components/Socials'
 
 export default function Home() {
   return (
     <main className='select-none'>
-      <section className='fixed top-0 left-0 w-full bg-black'>
+      <section className='fixed top-0 left-0 w-full bg-background'>
         <Image
           src={banniere}
           alt='banniere babyfoot time'

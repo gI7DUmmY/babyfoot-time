@@ -6,7 +6,7 @@ import {
 } from 'react-icons/fa6'
 import { IoMdMail } from 'react-icons/io'
 
-export const Socials = () => {
+const Socials = () => {
   return (
     <section className='mx-auto lg:max-w-7xl lg:my-12'>
       <div className='w-1/3 border-t border-slate-400 mx-auto' />
@@ -21,3 +21,5 @@ export const Socials = () => {
     </section>
   )
 }
+
+export default Socials
