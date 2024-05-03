@@ -6,22 +6,31 @@ export const metadata: Metadata = {
   title: 'Babyfoot Time',
   description:
     "Babyfoot Time : spécialiste de l'animation autour du baby-foot pour vos évènements privés et publics: personnels et professionnels. Ambiance chaleureuse et conviviale garantie! Location de baby-foot Bonzini : modèle officiel pour la compétition. Transport, montage, réglage et démontage des tables. Pour s'amuser, favoriser les échanges et se défouler. Activité mixte, intergénérationnelle, ludique et originale.",
+  openGraph: {
+    title: 'Babyfoot Time',
+    description:
+      "Babyfoot Time : spécialiste de l'animation autour du baby-foot pour vos évènements privés et publics: personnels et professionnels. Ambiance chaleureuse et conviviale garantie! Location de baby-foot Bonzini : modèle officiel pour la compétition. Transport, montage, réglage et démontage des tables. Pour s'amuser, favoriser les échanges et se défouler. Activité mixte, intergénérationnelle, ludique et originale.",
+    url: 'https://babyfoot-time.vercel.app',
+    siteName: 'Babyfoot Time',
+    images: [
+      {
+        url: 'https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/logo_babyfoot-time.png?alt=media&token=dc833be9-9b95-4fb1-aacb-e02c5337238f',
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: 'fr',
+    type: 'website',
+  },
   other: {
     'color-scheme': 'dark only',
     'twitter:image':
-      'https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/tft_officiel.png?alt=media&token=eaabc2b1-206a-4aff-bed4-025ed922cbfe',
+      'https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/logo_babyfoot-time.png?alt=media&token=dc833be9-9b95-4fb1-aacb-e02c5337238f',
     'twitter:card': 'summary_large_image',
     'twitter:domain': 'babyfoot-time.vercel.app',
     'twitter:url': 'https://babyfoot-time.vercel.app',
     'twitter:title': 'Babyfoot Time',
     'twitter:description':
-      "Babyfoot Time : spécialiste de l'animation autour du baby-foot pour vos évènements privés et publics: personnels et professionnels. Ambiance chaleureuse et conviviale garantie! Location de baby-foot Bonzini : modèle officiel pour la compétition. Transport, montage, réglage et démontage des tables. Pour s'amuser, favoriser les échanges et se défouler. Activité mixte, intergénérationnelle, ludique et originale.",
-    'og:url': 'https://babyfoot-time.vercel.app',
-    'og:image':
-      'https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/tft_officiel.png?alt=media&token=eaabc2b1-206a-4aff-bed4-025ed922cbfe',
-    'og:type': 'website',
-    'og:title': 'Babyfoot Time',
-    'og:description':
       "Babyfoot Time : spécialiste de l'animation autour du baby-foot pour vos évènements privés et publics: personnels et professionnels. Ambiance chaleureuse et conviviale garantie! Location de baby-foot Bonzini : modèle officiel pour la compétition. Transport, montage, réglage et démontage des tables. Pour s'amuser, favoriser les échanges et se défouler. Activité mixte, intergénérationnelle, ludique et originale.",
   },
 }
