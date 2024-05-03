@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'Babyfoot Time',
     images: [
       {
-        url: 'https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/logo_babyfoot-time.png?alt=media&token=dc833be9-9b95-4fb1-aacb-e02c5337238f',
+        url: 'https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/logo_babyfoot-time%20v2.png?alt=media&token=0f5fa164-f97e-48d9-a8a0-18192a9d60c9',
         width: 800,
         height: 600,
       },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   other: {
     'color-scheme': 'dark only',
     'twitter:image':
-      'https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/logo_babyfoot-time.png?alt=media&token=dc833be9-9b95-4fb1-aacb-e02c5337238f',
+      'https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/logo_babyfoot-time%20v2.png?alt=media&token=0f5fa164-f97e-48d9-a8a0-18192a9d60c9',
     'twitter:card': 'summary_large_image',
     'twitter:domain': 'babyfoot-time.vercel.app',
     'twitter:url': 'https://babyfoot-time.vercel.app',
