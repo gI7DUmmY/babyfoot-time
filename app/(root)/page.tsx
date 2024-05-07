@@ -8,7 +8,7 @@ import Socials from '@/components/Socials'
 export default function Home() {
   return (
     <main className='select-none'>
-      <section className='fixed top-0 left-0 w-full bg-background'>
+      <section className='fixed top-0 left-0 w-full bg-background z-10'>
         <Image
           src={banniere}
           alt='banniere babyfoot time'
