@@ -65,6 +65,14 @@ const config = {
           foreground: 'rgb(var(--card-foreground))',
         },
       },
+      dropShadow: {
+        white: [
+          '0.5px 0.5px 0 rgba(255, 255, 255, 0.35)',
+          '-0.5px -0.5px 0 rgba(255, 255, 255, 0.35)',
+          '-0.5px 0.5px 0 rgba(255, 255, 255, 0.35)',
+          '0.5px -0.5px 0 rgba(255, 255, 255, 0.35)',
+        ],
+      },
       fontFamily: {
         display: ['var(--font-playfair-display)'],
         playfair: ['var(--font-playfair)'],
