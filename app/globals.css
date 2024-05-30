@@ -77,7 +77,7 @@
 }
 
 .icon {
-  @apply cursor-pointer hover:animate-bounce;
+  @apply hover:animate-bounce;
 }
 
 .parallax {
