@@ -31,7 +31,7 @@ const Socials = () => {
         >
           <FaTiktok className='icon' />
         </Link>
-        <Link href='mailto:babyfoot.time@gmail.com'>
+        <Link href='mailto:contact@babyfoot-time.fr'>
           <IoMdMail className='icon' />
         </Link>
       </div>
