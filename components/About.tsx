@@ -9,7 +9,7 @@ const About = () => {
           Le temps passé à jouer au baby-foot au collège et au lycée m'a permis
           d'intégrer très tôt la compétition. D'être sacré meilleur jeune de
           France et champion de France junior puis champion de France par équipe
-          avec le club de toulouse.
+          avec le club de Toulouse.
         </p>
         <p>
           Habitué à coacher, fédérer et animer grâce à plus de 15 ans
