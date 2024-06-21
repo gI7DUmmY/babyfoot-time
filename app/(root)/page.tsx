@@ -4,6 +4,7 @@ import banniere from '@/public/assets/images/banniere.svg'
 import Titre from '@/components/Titre'
 import Services from '@/components/Services'
 import Socials from '@/components/Socials'
+import About from '@/components/About'
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
       <Titre />
 
       <Services />
+
+      <About />
 
       <Socials />
 
