@@ -80,6 +80,10 @@
   @apply hover:animate-bounce;
 }
 
+.lien-ext {
+  @apply text-orange1;
+}
+
 .parallax {
   min-height: 400px;
   @apply bg-fixed bg-center bg-cover;

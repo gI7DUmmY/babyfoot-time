@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import { FaExternalLinkAlt } from 'react-icons/fa'
+
 const About = () => {
   return (
     <section className='w-full flex flex-col justify-center gap-2 p-1 my-4'>
@@ -14,9 +17,18 @@ const About = () => {
         <p>
           Habitué à coacher, fédérer et animer grâce à plus de 15 ans
           d'expérience de coach sportif et ayant repris la compétition à haut
-          niveau au sein du club du tft depuis quelques années, j'ai aujourd'hui
-          à coeur de partager ma passion et promouvoir ainsi le baby-foot
-          sportif et loisir au travers d'animations personnalisées conviviales.
+          niveau au sein du club{' '}
+          <Link
+            href='https://www.toulouseft.fr/'
+            target='_blank'
+            className='lien-ext'
+          >
+            <FaExternalLinkAlt className='inline mx-1 text-xs align-baseline' />
+            Toulouse Football de Table
+          </Link>{' '}
+          depuis quelques années, j'ai aujourd'hui à coeur de partager ma
+          passion et promouvoir ainsi le baby-foot sportif et loisir au travers
+          d'animations personnalisées conviviales.
         </p>
       </div>
     </section>
