@@ -8,7 +8,7 @@ import {
 
 import { IoBusiness, IoTimer } from 'react-icons/io5'
 import { GiPalette, GiPartyPopper } from 'react-icons/gi'
-import { FaHandshake } from 'react-icons/fa6'
+import { FaHandshake, FaScrewdriverWrench } from 'react-icons/fa6'
 
 const Services = () => {
   return (
@@ -47,14 +47,14 @@ const Services = () => {
         </CardContent>
       </Card>
 
-      <Card className='col-span-2'>
+      <Card>
         <CardHeader>
           <CardTitle>
             <IoTimer className='mx-auto' />
             louez
           </CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className='px-20'>
           <p>
             une ou plusieurs tables bonzini b90 itsf <br /> (table officielle en
             compétition)
@@ -93,6 +93,22 @@ const Services = () => {
             <li>réglages</li>
             <li>démontage</li>
           </ul>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>
+            <FaScrewdriverWrench className='mx-auto' />
+            maintenance
+          </CardTitle>
+        </CardHeader>
+        <CardContent className='px-20'>
+          <p>
+            entretien de vos baby-foots
+            <br />
+            sur Toulouse et ses environs
+          </p>
         </CardContent>
       </Card>
     </section>

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import {
   FaLinkedin,
+  FaPhone,
   FaSquareFacebook,
   FaSquareInstagram,
   FaTiktok,
@@ -33,6 +34,9 @@ const Socials = () => {
         </Link>
         <Link href='mailto:contact@babyfoot-time.fr'>
           <IoMdMail className='icon' />
+        </Link>
+        <Link href='tel:+33601844760'>
+          <FaPhone className='icon' />
         </Link>
       </div>
       <div className='w-2/3 border-b border-slate-400 mx-auto md:w-1/3' />
