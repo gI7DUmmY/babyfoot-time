@@ -9,7 +9,7 @@ import About from '@/components/About'
 export default function Home() {
   return (
     <main className='select-none'>
-      <section className='fixed top-0 left-0 w-full bg-background z-10'>
+      <section className='fixed top-0 left-0 bg-background w-screen z-10'>
         <Image
           src={banniere}
           alt='banniere babyfoot time'

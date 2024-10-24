@@ -35,7 +35,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className='px-10 text-center font-lora max-w-5xl mx-auto lg:text-2xl'>
+      <div className='px-1 text-center w-full font-lora mx-auto md:px-10 lg:text-2xl lg:max-w-5xl'>
         <figure className='md:flex bg-gray-900 rounded-xl p-8 md:p-0'>
           <Image
             className='w-24 h-24 md:w-48 md:h-48 md:rounded-none rounded-full mx-auto my-auto'

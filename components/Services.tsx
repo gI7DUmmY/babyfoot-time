@@ -12,8 +12,8 @@ import { FaHandshake, FaScrewdriverWrench } from 'react-icons/fa6'
 
 const Services = () => {
   return (
-    <section className='w-full flex flex-col justify-center gap-2 p-1 md:grid md:grid-cols-2'>
-      <Card>
+    <section className='w-full flex flex-col justify-center gap-2 p-1 md:grid md:grid-cols-2 lg:gap-6 lg:p-6 2xl:grid-cols-6'>
+      <Card className='2xl:col-span-2'>
         <CardHeader>
           <CardTitle>
             <IoBusiness className='mx-auto' />
@@ -31,7 +31,7 @@ const Services = () => {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card className='2xl:col-span-2'>
         <CardHeader>
           <CardTitle>
             <GiPartyPopper className='mx-auto' /> pour vos soirées privées
@@ -47,7 +47,7 @@ const Services = () => {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card className='2xl:col-span-2'>
         <CardHeader>
           <CardTitle>
             <IoTimer className='mx-auto' />
@@ -62,7 +62,7 @@ const Services = () => {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card className='2xl:col-span-3 2xl:pl-60'>
         <CardHeader>
           <CardTitle>
             <GiPalette className='mx-auto' />
@@ -79,7 +79,7 @@ const Services = () => {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card className='2xl:col-span-3 2xl:pr-60'>
         <CardHeader>
           <CardTitle>
             <FaHandshake className='mx-auto' />
@@ -96,7 +96,7 @@ const Services = () => {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card className='2xl:col-span-6'>
         <CardHeader>
           <CardTitle>
             <FaScrewdriverWrench className='mx-auto' />
