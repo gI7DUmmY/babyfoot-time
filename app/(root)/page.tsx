@@ -5,6 +5,7 @@ import Titre from '@/components/Titre'
 import Services from '@/components/Services'
 import Socials from '@/components/Socials'
 import About from '@/components/About'
+import Feedback from '@/components/Feedback'
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
       <Services />
 
       <About />
+
+      {/* <Feedback /> */}
 
       <Socials />
 
