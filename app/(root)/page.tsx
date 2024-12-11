@@ -25,7 +25,7 @@ export default function Home() {
 
       <About />
 
-      {/* <Feedback /> */}
+      <Feedback />
 
       <Socials />
 

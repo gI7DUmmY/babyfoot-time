@@ -22,15 +22,15 @@ const Feedback = () => {
           <CarouselItem className='md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4'>
             <div className='p-1'>
               <Card>
-                <CardContent className='flex flex-col aspect-square items-center justify-center p-6 font-medium md:text-lg text-pretty'>
+                <CardContent className='flex flex-col aspect-square items-center justify-evenly p-6 font-medium md:text-lg text-pretty'>
                   <blockquote>
                     <p>
-                      &laquo; Une superbe animation : un vrai bonheur de rejouer
-                      au baby après tant d'années&nbsp;! &raquo;
+                      &laquo; En espérant continuer à travailler avec vous sur
+                      de prochaines manifestations ludiques&nbsp;! &raquo;
                     </p>
                   </blockquote>
-                  <div className='text-slate-500 capitalize italic text-base mt-2'>
-                    Martine, Responsable RH
+                  <div className='text-slate-500 capitalize italic text-base'>
+                    Matthieu, organisateur du Festival du jeu
                   </div>
                 </CardContent>
               </Card>
@@ -40,30 +40,15 @@ const Feedback = () => {
           <CarouselItem className='md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4'>
             <div className='p-1'>
               <Card>
-                <CardContent className='flex flex-col aspect-square items-center justify-center p-6 font-medium md:text-lg text-pretty'>
-                  <blockquote>
-                    <p>&laquo; Je me suis trop amusé&nbsp;! &raquo;</p>
-                  </blockquote>
-                  <div className='text-slate-500 capitalize italic text-base mt-2'>
-                    Lucas, 12ans
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-
-          <CarouselItem className='md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4'>
-            <div className='p-1'>
-              <Card>
-                <CardContent className='flex flex-col aspect-square items-center justify-center p-6 font-medium md:text-lg text-pretty'>
+                <CardContent className='flex flex-col aspect-square items-center justify-evenly p-6 font-medium md:text-lg text-pretty'>
                   <blockquote>
                     <p>
-                      &laquo; Une prestation efficace et professionnelle&nbsp;!
-                      &raquo;
+                      &laquo; ça m'a donné envie de m'y mettre à fond et faire
+                      de la compétition &raquo;
                     </p>
                   </blockquote>
-                  <div className='text-slate-500 capitalize italic text-base mt-2'>
-                    Patrick, Organisateur Évènementiel
+                  <div className='text-slate-500 capitalize italic text-base'>
+                    Aurore, animatrice collège
                   </div>
                 </CardContent>
               </Card>
@@ -73,14 +58,32 @@ const Feedback = () => {
           <CarouselItem className='md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4'>
             <div className='p-1'>
               <Card>
-                <CardContent className='flex flex-col aspect-square items-center justify-center p-6 font-medium md:text-lg text-pretty'>
+                <CardContent className='flex flex-col aspect-square items-center justify-evenly p-6 font-medium md:text-lg text-pretty'>
+                  <blockquote>
+                    <p>
+                      &laquo; c'est trop bien ! Ca serait cool de demander un
+                      baby-foot au père Noël !? &raquo;
+                    </p>
+                  </blockquote>
+                  <div className='text-slate-500 capitalize italic text-base'>
+                    Un papa qui jouait avec son fils
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+
+          {/* <CarouselItem className='md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4'>
+            <div className='p-1'>
+              <Card>
+                <CardContent className='flex flex-col aspect-square items-center justify-evenly p-6 font-medium md:text-lg text-pretty'>
                   <blockquote>
                     <p>
                       &laquo; On est venues par hasard avec ma copine et on
                       s'est éclatées&nbsp;! &raquo;
                     </p>
                   </blockquote>
-                  <div className='text-slate-500 capitalize italic text-base mt-2'>
+                  <div className='text-slate-500 capitalize italic text-base'>
                     Marion, Étudiante en prépa HEC
                   </div>
                 </CardContent>
@@ -91,7 +94,7 @@ const Feedback = () => {
           <CarouselItem className='md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4'>
             <div className='p-1'>
               <Card>
-                <CardContent className='flex flex-col aspect-square items-center justify-center p-6 font-medium md:text-lg text-pretty'>
+                <CardContent className='flex flex-col aspect-square items-center justify-evenly p-6 font-medium md:text-lg text-pretty'>
                   <blockquote>
                     <p>
                       &laquo; J'ai pu confier mon fils à Laurent le temps de
@@ -99,13 +102,13 @@ const Feedback = () => {
                       babyfoot. &raquo;
                     </p>
                   </blockquote>
-                  <div className='text-slate-500 capitalize italic text-base mt-2'>
+                  <div className='text-slate-500 capitalize italic text-base'>
                     Henry, Franc-Maçon
                   </div>
                 </CardContent>
               </Card>
             </div>
-          </CarouselItem>
+          </CarouselItem> */}
         </CarouselContent>
       </Carousel>
     </section>
