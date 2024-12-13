@@ -4,11 +4,31 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  type CarouselApi,
 } from '@/components/ui/carousel'
 import Autoplay from 'embla-carousel-autoplay'
 import { Card, CardContent } from './ui/card'
+import { useState, useEffect } from 'react'
+import { FaCircle } from 'react-icons/fa6'
 
 const Feedback = () => {
+  const [api, setApi] = useState<CarouselApi>()
+  const [current, setCurrent] = useState(0)
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    if (!api) {
+      return
+    }
+
+    setCount(api.scrollSnapList().length)
+    setCurrent(api.selectedScrollSnap() + 1)
+
+    api.on('select', () => {
+      setCurrent(api.selectedScrollSnap() + 1)
+    })
+  }, [api])
+
   return (
     <section className='w-full p-1 my-4 lg:w-4/5 lg:mx-auto'>
       <Carousel
@@ -17,6 +37,7 @@ const Feedback = () => {
             delay: 5000,
           }),
         ]}
+        setApi={setApi}
       >
         <CarouselContent className='-ml-2 md:-ml-4'>
           <CarouselItem className='md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4'>
@@ -74,6 +95,21 @@ const Feedback = () => {
           </CarouselItem>
         </CarouselContent>
       </Carousel>
+
+      <div className='w-full flex flex-row justify-center gap-2 lg:hidden'>
+        {count > 2 &&
+          api
+            ?.scrollSnapList()
+            .map((feed, _index) => (
+              <FaCircle
+                className={`text-orange1 ${
+                  current === _index + 1 ? 'opacity-100' : 'opacity-20'
+                }`}
+                key={feed}
+                id={_index.toString()}
+              />
+            ))}
+      </div>
     </section>
   )
 }
