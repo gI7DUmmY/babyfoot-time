@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import { playfair_display, playfair, lora } from './fonts'
 import './globals.css'
+import Image from 'next/image'
+import banniere from '@/public/assets/images/banniere.svg'
+import Socials from '@/components/Socials'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://babyfoot-time.fr'),
@@ -46,7 +49,26 @@ export default function RootLayout({
       <body
         className={`${playfair_display.variable} ${playfair.variable} ${lora.variable}`}
       >
-        {children}
+        <header className='fixed top-0 left-0 bg-background w-screen z-10'>
+          <Image
+            src={banniere}
+            alt='banniere babyfoot time'
+            priority
+            className='mx-auto'
+          />
+        </header>
+        <main className='mt-36 md:mt-52 lg:mt-60'>{children}</main>
+        <footer className='text-center mt-4'>
+          <Socials />
+
+          <p className='mt-4 mb-2'>
+            Copyright ©️ 2024 Babyfoot Time
+            <span className='md:hidden'>
+              <br />
+            </span>
+            <span className='hidden md:inline'> | </span>Tous Doits Réservés
+          </p>
+        </footer>
       </body>
     </html>
   )
