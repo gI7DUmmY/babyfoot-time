@@ -39,7 +39,6 @@ const Socials = () => {
           <FaPhone className='icon' />
         </Link>
       </div>
-      <div className='w-2/3 border-b border-slate-400 mx-auto md:w-1/3' />
     </section>
   )
 }

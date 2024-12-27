@@ -5,12 +5,13 @@ import Laurent from '@/public/assets/images/laurent.png'
 
 const About = () => {
   return (
-    <section className='w-full flex flex-col justify-center gap-2 p-1 my-4'>
+    <section className='w-full flex flex-col justify-center gap-2 p-1 my-8'>
+      <div className='w-2/3 border-b border-slate-400 mx-auto my-4 md:w-1/3' />
       <h3 className='mb-4 text-2xl font-playfair font-semibold leading-none tracking-tight text-orange2 uppercase text-center lg:text-4xl'>
         qui sommes-nous ?
       </h3>
 
-      <div className='px-10 text-center font-lora max-w-5xl mx-auto lg:text-2xl'>
+      <div className='px-5 text-justify font-lora max-w-5xl mx-auto lg:text-2xl'>
         <p>
           Le temps passé à jouer au baby-foot au collège et au lycée m'a permis
           d'intégrer très tôt la compétition. D'être sacré meilleur jeune de
@@ -26,8 +27,8 @@ const About = () => {
             target='_blank'
             className='lien-ext'
           >
-            <FaExternalLinkAlt className='inline mx-1 text-xs align-baseline' />
             Toulouse Football de Table
+            <FaExternalLinkAlt className='inline mx-1 text-sm align-baseline' />
           </Link>{' '}
           depuis quelques années, j'ai aujourd'hui à coeur de partager ma
           passion et promouvoir ainsi le baby-foot sportif et loisir au travers
@@ -35,7 +36,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className='px-1 text-center w-full font-lora mx-auto md:px-10 lg:text-2xl lg:max-w-5xl'>
+      <div className='px-1 text-center w-full font-lora mx-auto md:px-5 lg:text-2xl lg:max-w-5xl'>
         <figure className='md:flex bg-gray-900 rounded-xl p-8 md:p-0'>
           <Image
             className='w-24 h-24 md:w-48 md:h-48 md:rounded-none rounded-full mx-auto my-auto'
