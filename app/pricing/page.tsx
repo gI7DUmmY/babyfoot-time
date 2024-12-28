@@ -14,96 +14,107 @@ const page = () => {
   return (
     <section>
       <div className='pt-8 flex flex-col gap-2 px-2 md:items-center lg:flex-row lg:items-stretch lg:place-content-center'>
-        {/* Initiation */}
+        {/* Coaching */}
         <Card className='border border-muted-foreground rounded-lg bg-secondary-foreground text-muted-foreground md:max-w-lg lg:max-w-xs'>
           <CardHeader>
             <CardTitle className='group-hover:scale-100 font-playfair font-bold text-xl text-orange2 capitalize text-left flex flex-row flex-wrap justify-between lg:flex-col lg:place-content-center lg:text-center'>
-              <div>Initiation</div>
-              <div className='lining-nums'>150&euro;</div>
+              <div className='text-orange1'>Coaching</div>
+              <div className='lining-nums'>100&euro;</div>
             </CardTitle>
             <CardDescription className='mt-2 mb-4 text-base text-muted-foreground'>
-              Présentation des règles et des techniques de babyfoot dans leur
-              globalité puis mise en pratique
+              Cours à domicile : initiation ou perferctionnement
             </CardDescription>
           </CardHeader>
           <CardContent className='text-left text-base normal-case text-foreground'>
             <ul>
               <li>
-                <FaCheck className='inline text-orange1' /> pour 1 à 4 personnes
+                <FaCheck className='inline text-orange1 mr-2' />1 heure de
+                coaching
               </li>
               <li>
-                <FaCheck className='inline text-orange1' /> déplacement sur le
-                lieu de votre choix
+                <FaCheck className='inline text-orange1 mr-2' />1 joueur expert
               </li>
               <li>
-                <FaCheck className='inline text-orange1' /> 1 table de
-                compétition Bonzini louée
+                <FaCheck className='inline text-orange1 mr-2' />1 table de
+                compétition Bonzini (B90 ITSF)
+              </li>
+              <li>
+                <FaCheck className='inline text-orange1 mr-2' />
+                Frais de déplacement offerts dans un rayon de 50Km de Toulouse
               </li>
             </ul>
           </CardContent>
         </Card>
 
-        {/* Perfectionnement */}
+        {/* Tournoi */}
         <Card className='border border-muted-foreground rounded-lg bg-secondary-foreground text-muted-foreground md:max-w-lg lg:max-w-xs'>
           <CardHeader>
             <CardTitle className='transition-none group-hover:scale-100 font-playfair font-bold text-xl text-orange2 capitalize text-left flex flex-row flex-wrap justify-between lg:flex-col lg:place-content-center lg:text-center'>
-              <div className='lg:text-center'>Perfectionnement</div>
-              <div className='lining-nums'>250&euro;</div>
+              <div className='text-orange1'>Tournoi</div>
+              <div className='lining-nums'>750&euro;</div>
             </CardTitle>
             <CardDescription className='mt-2 mb-4 text-base text-muted-foreground'>
-              &Eacute;valuation de niveau et mise en place d'un programme de
-              perfectionnement personnalisé
+              Tournoi clé en main pour environ 30 personnes
             </CardDescription>
           </CardHeader>
           <CardContent className='text-left text-base normal-case text-foreground'>
             <ul>
               <li>
-                <FaCheck className='inline text-orange1' /> pour 1 personne
+                <FaCheck className='inline text-orange1 mr-2' />1 animateur
               </li>
               <li>
-                <FaCheck className='inline text-orange1' /> déplacement sur le
-                lieu de votre choix
+                <FaCheck className='inline text-orange1 mr-2' />3 tables de
+                compétition Bonzini (B90 ITSF)
               </li>
               <li>
-                <FaCheck className='inline text-orange1' /> 1 table de
-                compétition Bonzini louée
+                <FaCheck className='inline text-orange1 mr-2' />
+                Acceuil-briefing-phase qualificative et phase finale-remise des
+                prix
               </li>
               <li>
-                <FaCheck className='inline text-orange1' /> coaching par un
-                joueur de compétition
+                <FaCheck className='inline text-orange1 mr-2' />
+                Visite gratuite avant événement pour étude de faisabilité
               </li>
             </ul>
           </CardContent>
         </Card>
 
-        {/* Animation */}
+        {/* Entretien */}
         <Card className='border border-muted-foreground rounded-lg bg-secondary-foreground text-muted-foreground md:max-w-lg lg:max-w-xs'>
           <CardHeader>
             <CardTitle className='group-hover:scale-100 font-playfair font-bold text-xl text-orange2 capitalize text-left flex flex-row flex-wrap justify-between lg:flex-col lg:place-content-center lg:text-center'>
-              <div className='lg:text-center'>Animation</div>
-              <div className='lining-nums'>550&euro;</div>
+              <div className='text-orange1'>Entretien</div>
+              <div className='lining-nums'>100&euro;</div>
             </CardTitle>
             <CardDescription className='mt-2 mb-4 text-base text-muted-foreground'>
-              Programmez une activite complète : tournoi, team building,
-              divertissement, etc...
+              Révision et entretien de votre baby-foot
             </CardDescription>
           </CardHeader>
           <CardContent className='text-left text-base normal-case text-foreground'>
             <ul>
               <li>
-                <FaCheck className='inline text-orange1' /> jusqu'à 50 personnes
+                <FaCheck className='inline text-orange1 mr-2' />
+                Nettoyage du meuble
               </li>
               <li>
-                <FaCheck className='inline text-orange1' /> déplacement sur le
-                lieu de votre choix
+                <FaCheck className='inline text-orange1 mr-2' />
+                Démontage et nettoyage en profondeur des barres et des joueurs
               </li>
               <li>
-                <FaCheck className='inline text-orange1' /> jusqu'à 5 tables de
-                compétition Bonzini louées
+                <FaCheck className='inline text-orange1 mr-2' />
+                Dégraissage du tapis
               </li>
               <li>
-                <FaCheck className='inline text-orange1' /> organisation
-                complète d'un tournoi ou de parties libres
+                <FaCheck className='inline text-orange1 mr-2' />
+                Lubrification des barres
+              </li>
+              <li>
+                <FaCheck className='inline text-orange1 mr-2' />
+                Réalignement des joueurs
+              </li>
+              <li>
+                <FaCheck className='inline text-orange1 mr-2' />
+                Changement de pièces à envisager sur devis
               </li>
             </ul>
           </CardContent>
