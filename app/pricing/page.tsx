@@ -4,7 +4,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card'
+} from '@/components/ui/ficheTarif'
 import { FaCheck } from 'react-icons/fa'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
@@ -15,17 +15,17 @@ const page = () => {
     <section>
       <div className='pt-8 flex flex-col gap-2 px-2 md:items-center lg:flex-row lg:items-stretch lg:place-content-center'>
         {/* Coaching */}
-        <Card className='border border-muted-foreground rounded-lg bg-secondary-foreground text-muted-foreground md:max-w-lg lg:max-w-xs'>
+        <Card>
           <CardHeader>
-            <CardTitle className='group-hover:scale-100 font-playfair font-bold text-xl text-orange2 capitalize text-left flex flex-row flex-wrap justify-between lg:flex-col lg:place-content-center lg:text-center'>
+            <CardTitle>
               <div className='text-orange1'>Coaching</div>
               <div className='lining-nums'>100&euro;</div>
             </CardTitle>
-            <CardDescription className='mt-2 mb-4 text-base text-muted-foreground'>
+            <CardDescription>
               Cours à domicile : initiation ou perferctionnement
             </CardDescription>
           </CardHeader>
-          <CardContent className='text-left text-base normal-case text-foreground'>
+          <CardContent>
             <ul>
               <li>
                 <FaCheck className='inline text-orange1 mr-2' />1 heure de
@@ -47,17 +47,17 @@ const page = () => {
         </Card>
 
         {/* Tournoi */}
-        <Card className='border border-muted-foreground rounded-lg bg-secondary-foreground text-muted-foreground md:max-w-lg lg:max-w-xs'>
+        <Card>
           <CardHeader>
-            <CardTitle className='transition-none group-hover:scale-100 font-playfair font-bold text-xl text-orange2 capitalize text-left flex flex-row flex-wrap justify-between lg:flex-col lg:place-content-center lg:text-center'>
+            <CardTitle>
               <div className='text-orange1'>Tournoi</div>
               <div className='lining-nums'>750&euro;</div>
             </CardTitle>
-            <CardDescription className='mt-2 mb-4 text-base text-muted-foreground'>
+            <CardDescription>
               Tournoi clé en main pour environ 30 personnes
             </CardDescription>
           </CardHeader>
-          <CardContent className='text-left text-base normal-case text-foreground'>
+          <CardContent>
             <ul>
               <li>
                 <FaCheck className='inline text-orange1 mr-2' />1 animateur
@@ -80,17 +80,17 @@ const page = () => {
         </Card>
 
         {/* Entretien */}
-        <Card className='border border-muted-foreground rounded-lg bg-secondary-foreground text-muted-foreground md:max-w-lg lg:max-w-xs'>
+        <Card>
           <CardHeader>
-            <CardTitle className='group-hover:scale-100 font-playfair font-bold text-xl text-orange2 capitalize text-left flex flex-row flex-wrap justify-between lg:flex-col lg:place-content-center lg:text-center'>
+            <CardTitle>
               <div className='text-orange1'>Entretien</div>
               <div className='lining-nums'>100&euro;</div>
             </CardTitle>
-            <CardDescription className='mt-2 mb-4 text-base text-muted-foreground'>
+            <CardDescription>
               Révision et entretien de votre baby-foot
             </CardDescription>
           </CardHeader>
-          <CardContent className='text-left text-base normal-case text-foreground'>
+          <CardContent>
             <ul>
               <li>
                 <FaCheck className='inline text-orange1 mr-2' />
