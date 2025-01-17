@@ -127,7 +127,7 @@ const page = () => {
           asChild
           className='border-orange2 p-3 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
         >
-          <Link href='/'>
+          <Link href='/#maintenance'>
             <TiArrowBack className='mr-2 text-xl md:text-4xl' />
             Accueil
           </Link>

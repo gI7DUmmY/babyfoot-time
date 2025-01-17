@@ -101,7 +101,7 @@ const Services = () => {
           </CardContent>
         </Card>
 
-        <Card className='max-w-prose'>
+        <Card id='maintenance' className='max-w-prose'>
           <CardHeader>
             <CardTitle>
               <FaScrewdriverWrench className='mx-auto' />
@@ -129,13 +129,13 @@ const Services = () => {
         </Card>
       </div>
 
-      <div className='flex place-content-center mt-3'>
+      <div id='tarifs' className='flex place-content-center mt-3'>
         <Button
           variant='outline'
           asChild
           className='border-orange2 p-3 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
         >
-          <Link href='/pricing' id='tarifs' className='capitalize'>
+          <Link href='/pricing' className='capitalize'>
             <FaHandPointRight className='mr-2 text-xl md:text-4xl' />
             Consultez nos tarifs
           </Link>
