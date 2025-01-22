@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import event from '@/public/assets/images/event_orange1.png'
+import event from '@/public/assets/images/event_orange.png'
 
 const Titre = () => {
   return (

@@ -86,9 +86,23 @@
 
 .parallax {
   min-height: 400px;
-  @apply bg-fixed bg-center bg-cover;
+  @apply bg-fixed bg-right-top bg-cover;
 }
 
-#titre {
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/Hero_bg.jpeg?alt=media&token=abb35837-c653-4cba-8539-d677972a5064');
+@media (min-width: 1024px) {
+  #titre {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/babyfoot-time-hi.jpg?alt=media&token=0a7db6b8-1d43-42fc-b7fe-1b6c3afb1034');
+  }
+}
+
+@media (min-width: 431px) and (max-width: 1023px) {
+  #titre {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/babyfoot-time-hi_tablet.jpg?alt=media&token=803b3a92-69c1-4a0b-8198-bbd7531f408c');
+  }
+}
+
+@media (max-width: 430px) {
+  #titre {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/babyfoot-time-hi_mobile.jpg?alt=media&token=997a82bc-7fb6-4fb5-b35c-e855f530adcf');
+  }
 }
