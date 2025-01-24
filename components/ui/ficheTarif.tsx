@@ -24,7 +24,7 @@ const CardHeader = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      'space-y-1.5 p-6 font-playfair font-bold text-xl text-orange2 capitalize text-left flex flex-row flex-wrap justify-between lg:flex-col lg:place-content-center lg:text-center',
+      'space-y-1.5 p-6 font-playfair font-bold text-xl text-orange2 capitalize text-left flex flex-row flex-wrap justify-between md:flex-col lg:place-content-center lg:text-center',
       className
     )}
     {...props}
@@ -53,7 +53,10 @@ const CardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <p
     ref={ref}
-    className={cn('mt-2 mb-4 text-base text-muted-foreground', className)}
+    className={cn(
+      'mt-2 mb-4 normal-case text-base text-muted-foreground lg:text-xl',
+      className
+    )}
     {...props}
   />
 ))
