@@ -86,26 +86,29 @@
 
 .parallax {
   min-height: 400px;
-  @apply bg-fixed bg-right-top bg-cover;
+  @apply bg-fixed;
 }
 
 /* BG Accueil Desktop */
 @media (min-width: 1024px) {
   #titre {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/babyfoot-time-hi.webp?alt=media&token=c878afb3-782d-41dc-b502-7c9db316a85f');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/babyfoot-time-hi-min.jpg?alt=media&token=738b5f97-b5bd-4284-8b85-724f716c89c5');
+    @apply bg-center bg-cover;
   }
 }
 
 /* BG Accueil Tablet */
 @media (min-width: 431px) and (max-width: 1023px) {
   #titre {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/babyfoot-time-hi_tablet.webp?alt=media&token=3d03a6b1-d87e-4eb4-8eee-5e1233aa92d4');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/babyfoot-time-hi_tablet-min.jpg?alt=media&token=2aec8952-a2ab-4f81-8419-30efcb12c83a');
+    @apply bg-center bg-cover;
   }
 }
 
 /* BG Accueil Smartphone */
 @media (max-width: 430px) {
   #titre {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/babyfoot-time-hi_mobile.webp?alt=media&token=0db5f57e-fdd6-4ef0-a915-25942e273d3e');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/babyfoot-time-hi_mobile-min.jpg?alt=media&token=ecdfb539-98f8-4536-b72a-8a7f24723a0e');
+    @apply bg-contain;
   }
 }
