@@ -13,10 +13,14 @@ import { BiSolidChevronsUp } from 'react-icons/bi'
 import { Button } from './ui/button'
 import Link from 'next/link'
 import { FaHandPointRight } from 'react-icons/fa'
+import { Events } from './Events'
 
 const Services = () => {
   return (
     <section>
+      <div className='w-full p-3 flex place-content-center'>
+        <Events />
+      </div>
       <div className='w-full flex flex-col flex-wrap place-content-evenly lg:flex-row'>
         <Card className='max-w-prose'>
           <CardHeader>

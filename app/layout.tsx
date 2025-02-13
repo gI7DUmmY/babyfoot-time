@@ -66,7 +66,7 @@ export default function RootLayout({
             <span className='md:hidden'>
               <br />
             </span>
-            <span className='hidden md:inline'> | </span>Tous Doits Réservés
+            <span className='hidden md:inline'> | </span>Tous Droits Réservés
           </p>
         </footer>
       </body>
