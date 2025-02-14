@@ -31,6 +31,7 @@ export function Events() {
   const [open, setOpen] = React.useState(false)
   const isDesktop = useMediaQuery('(min-width: 768px)')
 
+  // version desktop > 768px
   if (isDesktop) {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
@@ -45,8 +46,10 @@ export function Events() {
                 <PiNumberCircleTwoFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
                 <PiNumberCircleTwoFill className='relative inline-flex rounded-full h-6 w-6' />
               </span>
-              Venez à nos animations !
-              <FaCalendarCheck className='ml-2 text-xl md:text-4xl' />
+              <div className='flex place-content-center items-baseline'>
+                Venez à nos animations !
+                <FaCalendarCheck className='ml-2 text-xl md:text-2xl' />
+              </div>
             </div>
           </Button>
         </DialogTrigger>
@@ -63,7 +66,7 @@ export function Events() {
                   <Link
                     href='https://tally.so/r/3xlxV9'
                     target='_blank'
-                    className='ml-2 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 lg:text-3xl'
+                    className='ml-2 p-2 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
                   >
                     Je m'inscris !
                     <GiClick className='ml-2 inline align-middle' />
@@ -74,7 +77,7 @@ export function Events() {
                   <Link
                     href='https://tally.so/r/3xlxV9'
                     target='_blank'
-                    className='ml-2 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 lg:text-3xl'
+                    className='ml-2 p-2 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
                   >
                     Je m'inscris !
                     <GiClick className='ml-2 inline align-middle' />
@@ -88,6 +91,7 @@ export function Events() {
     )
   }
 
+  // version smartphone < 768px
   return (
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
@@ -101,8 +105,10 @@ export function Events() {
               <PiNumberCircleTwoFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
               <PiNumberCircleTwoFill className='relative inline-flex rounded-full h-6 w-6' />
             </span>
-            Venez à nos animations !
-            <FaCalendarCheck className='ml-2 text-xl md:text-4xl' />
+            <div className='flex place-content-center items-baseline'>
+              Venez à nos animations !
+              <FaCalendarCheck className='ml-2 text-xl md:text-4xl' />
+            </div>
           </div>
         </Button>
       </DrawerTrigger>
@@ -117,20 +123,20 @@ export function Events() {
               <li className='my-2'>
                 le 20/03 au B29 :
                 <Link
-                  href='https://tally.so/r/3xlxV9'
+                  href='https://tally.so/r/3jkbyJ'
                   target='_blank'
-                  className='ml-2 font-playfair text-lg text-orange2 hover:text-background hover:bg-orange2 md:text-4xl'
+                  className='ml-2 font-playfair text-xl text-orange2'
                 >
                   Je m'inscris !
                   <GiClick className='ml-2 inline align-middle' />
                 </Link>
               </li>
               <li>
-                le 12/04 au Fût et à Mesure :
+                le 5/04 au Fût et à Mesure :
                 <Link
-                  href='https://tally.so/r/3xlxV9'
+                  href='https://tally.so/r/wM7DN8'
                   target='_blank'
-                  className='ml-2 font-playfair text-lg text-orange2 hover:text-background hover:bg-orange2 md:text-4xl'
+                  className='ml-2 font-playfair text-xl text-orange2'
                 >
                   Je m'inscris !
                   <GiClick className='ml-2 inline align-middle' />
