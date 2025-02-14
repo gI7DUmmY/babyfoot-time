@@ -64,7 +64,7 @@ export function Events() {
                 <li className='my-2'>
                   le 20/03 au B29 :
                   <Link
-                    href='https://tally.so/r/3xlxV9'
+                    href='https://tally.so/r/3jkbyJ'
                     target='_blank'
                     className='ml-2 p-2 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
                   >
@@ -73,9 +73,9 @@ export function Events() {
                   </Link>
                 </li>
                 <li>
-                  le 12/04 au Fût et à Mesure :
+                  le 5/04 au Fût et à Mesure :
                   <Link
-                    href='https://tally.so/r/3xlxV9'
+                    href='https://tally.so/r/wM7DN8'
                     target='_blank'
                     className='ml-2 p-2 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
                   >
