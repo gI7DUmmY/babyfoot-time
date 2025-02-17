@@ -9,6 +9,7 @@ import { FaCheck } from 'react-icons/fa'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { TiArrowBack } from 'react-icons/ti'
+import { PiListChecksFill } from 'react-icons/pi'
 
 const page = () => {
   return (
@@ -121,7 +122,7 @@ const page = () => {
         </Card>
       </div>
 
-      <div className='flex place-content-center mt-4'>
+      <div className='flex place-content-center gap-6 mt-4'>
         <Button
           variant='outline'
           asChild
@@ -130,6 +131,17 @@ const page = () => {
           <Link href='/#maintenance'>
             <TiArrowBack className='mr-2 text-xl md:text-4xl' />
             Accueil
+          </Link>
+        </Button>
+
+        <Button
+          variant='outline'
+          asChild
+          className='border-orange2 p-3 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
+        >
+          <Link href='https://tally.so/r/w4pxrd' target='_blank'>
+            <PiListChecksFill className='mr-2 text-xl md:text-4xl' />
+            Devis à la carte
           </Link>
         </Button>
       </div>
