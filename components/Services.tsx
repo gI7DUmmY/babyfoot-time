@@ -21,7 +21,7 @@ const Services = () => {
       <div className='w-full p-3 flex place-content-center'>
         <Events />
       </div>
-      <div className='w-full flex flex-col flex-wrap place-content-evenly lg:flex-row'>
+      <div className='w-full flex flex-col flex-wrap place-content-evenly lg:flex-row lg:place-content-around'>
         <Card className='max-w-prose'>
           <CardHeader>
             <CardTitle>
