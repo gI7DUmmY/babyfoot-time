@@ -47,8 +47,8 @@ export function Events() {
                 <PiNumberCircleTwoFill className='relative inline-flex rounded-full h-6 w-6' />
               </span>
               <div className='flex place-content-center items-baseline'>
+                <FaCalendarCheck className='mr-2 text-xl md:text-2xl' />
                 Venez à nos animations !
-                <FaCalendarCheck className='ml-2 text-xl md:text-2xl' />
               </div>
             </div>
           </Button>
@@ -106,8 +106,8 @@ export function Events() {
               <PiNumberCircleTwoFill className='relative inline-flex rounded-full h-6 w-6' />
             </span>
             <div className='flex place-content-center items-baseline'>
+              <FaCalendarCheck className='mr-2 text-xl md:text-4xl' />
               Venez à nos animations !
-              <FaCalendarCheck className='ml-2 text-xl md:text-4xl' />
             </div>
           </div>
         </Button>
