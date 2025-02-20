@@ -9,7 +9,7 @@ const Partners = () => {
         <FaPeopleGroup className='inline mr-3 align-text-top pt-1' />
         Nos partenaires
       </h3>
-      <div className='w-full flex flex-row place-content-center gap-24'>
+      <div className='w-full flex flex-row place-content-center gap-12 lg:gap-24'>
         <Image
           src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets//logo_fut.png'
           alt='logo b29'
