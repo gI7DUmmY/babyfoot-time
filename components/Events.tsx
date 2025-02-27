@@ -39,12 +39,12 @@ export function Events() {
           <Button
             variant='outline'
             asChild
-            className='border-orange2 p-3 my-2 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
+            className='border-orange2 p-3 my-2 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
           >
             <div className='relative'>
               <span className='absolute flex h-6 w-6 -top-3 -right-4'>
                 <PiNumberCircleTwoFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
-                <PiNumberCircleTwoFill className='relative inline-flex rounded-full h-6 w-6' />
+                <PiNumberCircleTwoFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
               </span>
               <div className='flex place-content-center items-baseline'>
                 Venez à nos animations !
@@ -98,12 +98,12 @@ export function Events() {
         <Button
           variant='outline'
           asChild
-          className='border-orange2 p-3 my-2 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
+          className='border-orange2 p-3 my-2 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
         >
           <div className='relative'>
             <span className='absolute flex h-6 w-6 -top-3 -right-4'>
               <PiNumberCircleTwoFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
-              <PiNumberCircleTwoFill className='relative inline-flex rounded-full h-6 w-6' />
+              <PiNumberCircleTwoFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange2' />
             </span>
             <div className='flex place-content-center items-baseline'>
               Venez à nos animations !
@@ -147,7 +147,9 @@ export function Events() {
         </DrawerHeader>
         <DrawerFooter className='pt-2'>
           <DrawerClose asChild>
-            <Button variant='outline'>Fermer</Button>
+            <Button className='border border-orange2 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2'>
+              Fermer
+            </Button>
           </DrawerClose>
         </DrawerFooter>
       </DrawerContent>
