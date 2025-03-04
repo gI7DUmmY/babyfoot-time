@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { FaPeopleGroup } from 'react-icons/fa6'
 
 const Partners = () => {
@@ -9,21 +10,25 @@ const Partners = () => {
         <FaPeopleGroup className='inline mr-3 align-text-top pt-1' />
         Nos partenaires
       </h3>
-      <div className='w-full flex flex-row place-content-center gap-12 lg:gap-24'>
-        <Image
-          src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets//logo_fut.png'
-          alt='logo b29'
-          width='447'
-          height='677'
-          className='h-28 w-auto lg:h-36'
-        />
-        <Image
-          src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets//logo_b29.webp'
-          alt='logo b29'
-          width='512'
-          height='512'
-          className='h-28 w-auto lg:h-36'
-        />
+      <div className='w-full flex flex-row place-content-evenly lg:place-content-center lg:gap-32'>
+        <Link href='https://aufutetamesure.fr/' target='blank'>
+          <Image
+            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets//logo_fut.png'
+            alt='logo b29'
+            width='447'
+            height='677'
+            className='h-28 w-auto md:h-36'
+          />
+        </Link>
+        <Link href='https://www.b29toulouse.fr/' target='blank'>
+          <Image
+            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets//logo_b29.webp'
+            alt='logo b29'
+            width='512'
+            height='512'
+            className='h-28 w-auto md:h-36'
+          />
+        </Link>
       </div>
     </section>
   )
