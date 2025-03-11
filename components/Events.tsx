@@ -9,6 +9,7 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
+  DialogDescription,
   DialogTrigger,
 } from '@/components/ui/dialog'
 import {
@@ -18,6 +19,7 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
+  DrawerDescription,
   DrawerTrigger,
 } from '@/components/ui/drawer'
 import Link from 'next/link'
@@ -83,6 +85,7 @@ export function Events() {
                 </li>
               </ul>
             </div>
+            <DialogDescription />
           </DialogHeader>
         </DialogContent>
       </Dialog>
@@ -142,6 +145,7 @@ export function Events() {
               </li>
             </ul>
           </div>
+          <DrawerDescription />
         </DrawerHeader>
         <DrawerFooter className='pt-2'>
           <DrawerClose asChild>
