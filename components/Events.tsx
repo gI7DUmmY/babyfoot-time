@@ -7,7 +7,6 @@ import { Button } from '@/components/ui/button'
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -16,7 +15,6 @@ import {
   Drawer,
   DrawerClose,
   DrawerContent,
-  DrawerDescription,
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
@@ -59,7 +57,7 @@ export function Events() {
             <DialogTitle className='text-2xl'>
               Nos prochaines animations :
             </DialogTitle>
-            <DialogDescription className='text-xl lg:text-2xl'>
+            <div className='text-xl lg:text-2xl'>
               <ul>
                 <li className='my-2'>
                   le 20/03 au B29 :
@@ -84,7 +82,7 @@ export function Events() {
                   </Link>
                 </li>
               </ul>
-            </DialogDescription>
+            </div>
           </DialogHeader>
         </DialogContent>
       </Dialog>
@@ -118,7 +116,7 @@ export function Events() {
           <DrawerTitle className='text-2xl'>
             Nos prochaines animations :
           </DrawerTitle>
-          <DrawerDescription className='text-xl'>
+          <div className='text-xl'>
             <ul>
               <li className='my-2'>
                 le 20/03 au B29 :
@@ -143,7 +141,7 @@ export function Events() {
                 </Link>
               </li>
             </ul>
-          </DrawerDescription>
+          </div>
         </DrawerHeader>
         <DrawerFooter className='pt-2'>
           <DrawerClose asChild>
