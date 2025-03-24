@@ -61,23 +61,23 @@ export function Events() {
             </DialogTitle>
             <div className='text-xl lg:text-2xl'>
               <ul>
-                <li className='my-2'>
-                  le 20/03 au B29 :
+                <li>
+                  le 5/04 au Fût et à Mesure :
                   <Link
-                    href='https://tally.so/r/3jkbyJ'
+                    href='https://tally.so/r/wM7DN8'
                     target='_blank'
-                    className='ml-2 p-2 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
+                    className='ml-2 p-1 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
                   >
                     Je m'inscris !
                     <GiClick className='ml-2 inline align-middle' />
                   </Link>
                 </li>
                 <li>
-                  le 5/04 au Fût et à Mesure :
+                  le 3/05 au Fût et à Mesure :
                   <Link
-                    href='https://tally.so/r/wM7DN8'
+                    href='https://tally.so/r/mOEaEk'
                     target='_blank'
-                    className='ml-2 p-2 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
+                    className='ml-2 p-1 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
                   >
                     Je m'inscris !
                     <GiClick className='ml-2 inline align-middle' />
@@ -121,10 +121,10 @@ export function Events() {
           </DrawerTitle>
           <div className='text-xl'>
             <ul>
-              <li className='my-2'>
-                le 20/03 au B29 :
+              <li>
+                le 5/04 au Fût et à Mesure :
                 <Link
-                  href='https://tally.so/r/3jkbyJ'
+                  href='https://tally.so/r/wM7DN8'
                   target='_blank'
                   className='ml-2 font-playfair text-xl text-orange2'
                 >
@@ -133,9 +133,9 @@ export function Events() {
                 </Link>
               </li>
               <li>
-                le 5/04 au Fût et à Mesure :
+                le 3/05 au Fût et à Mesure :
                 <Link
-                  href='https://tally.so/r/wM7DN8'
+                  href='https://tally.so/r/mOEaEk'
                   target='_blank'
                   className='ml-2 font-playfair text-xl text-orange2'
                 >
