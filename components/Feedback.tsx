@@ -82,12 +82,12 @@ const Feedback = () => {
                 <CardContent className='flex flex-col aspect-square items-center justify-evenly p-6 font-medium md:text-lg text-pretty'>
                   <blockquote>
                     <p>
-                      &laquo; c'est trop bien ! Ca serait cool de demander un
-                      baby-foot au père Noël !? &raquo;
+                      &laquo; C'était top, organisation, lieu, ambiance et bon
+                      esprit ! Merci ! Vivement le prochain ! &raquo;
                     </p>
                   </blockquote>
                   <div className='text-slate-500 capitalize italic text-base mt-2 md:text-lg'>
-                    Un papa qui jouait avec son fils
+                    Damien
                   </div>
                 </CardContent>
               </Card>
@@ -117,12 +117,12 @@ const Feedback = () => {
                 <CardContent className='flex flex-col aspect-square items-center justify-evenly p-6 font-medium md:text-lg text-pretty'>
                   <blockquote>
                     <p>
-                      &laquo; Je pensais m'ennuyer et en fait je m'éclate
+                      &laquo; bravo pour l'organisation de ce tournoi, merci !
                       &raquo;
                     </p>
                   </blockquote>
                   <div className='text-slate-500 capitalize italic text-base mt-2 md:text-lg'>
-                    Eva
+                    J&eacute;r&ocirc;me
                   </div>
                 </CardContent>
               </Card>

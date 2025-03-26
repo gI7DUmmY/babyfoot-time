@@ -54,10 +54,10 @@ export function Events() {
           </Button>
         </DialogTrigger>
 
-        <DialogContent className='sm:max-w-[425px] md:max-w-fit'>
+        <DialogContent className='sm:max-w-[425px] md:max-w-max'>
           <DialogHeader>
-            <DialogTitle className='text-2xl'>
-              Nos prochaines animations :
+            <DialogTitle className='text-2xl text-center'>
+              Nos prochaines animations
             </DialogTitle>
             <div className='text-xl lg:text-2xl'>
               <ul>
@@ -116,13 +116,13 @@ export function Events() {
 
       <DrawerContent>
         <DrawerHeader className='text-left'>
-          <DrawerTitle className='text-2xl'>
-            Nos prochaines animations :
+          <DrawerTitle className='text-2xl text-center'>
+            Nos prochaines animations
           </DrawerTitle>
           <div className='text-xl'>
             <ul>
               <li>
-                le 5/04 au Fût et à Mesure :
+                le 5/04 au Fût et à Mesure : <br />
                 <Link
                   href='https://tally.so/r/wM7DN8'
                   target='_blank'
@@ -133,7 +133,7 @@ export function Events() {
                 </Link>
               </li>
               <li>
-                le 3/05 au Fût et à Mesure :
+                le 3/05 au Fût et à Mesure : <br />
                 <Link
                   href='https://tally.so/r/mOEaEk'
                   target='_blank'
