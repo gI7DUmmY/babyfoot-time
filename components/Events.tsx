@@ -25,7 +25,7 @@ import {
 import Link from 'next/link'
 import { FaCalendarCheck } from 'react-icons/fa6'
 import { GiClick } from 'react-icons/gi'
-import { PiNumberCircleTwoFill } from 'react-icons/pi'
+import { PiNumberCircleOneFill } from 'react-icons/pi'
 
 export function Events() {
   const [open, setOpen] = React.useState(false)
@@ -39,12 +39,12 @@ export function Events() {
           <Button
             variant='outline'
             asChild
-            className='border-orange2 p-3 my-2 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
+            className='border-orange2 p-3 my-2 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 hover:cursor-pointer md:p-6 md:text-4xl'
           >
             <div className='relative'>
               <span className='absolute flex h-6 w-6 -top-3 -right-4'>
-                <PiNumberCircleTwoFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
-                <PiNumberCircleTwoFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
+                <PiNumberCircleOneFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
+                <PiNumberCircleOneFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
               </span>
               <div className='flex place-content-center items-baseline'>
                 <FaCalendarCheck className='mr-2 text-xl md:text-2xl' />
@@ -54,24 +54,13 @@ export function Events() {
           </Button>
         </DialogTrigger>
 
-        <DialogContent className='sm:max-w-[425px] md:max-w-max'>
+        <DialogContent className='sm:max-w-[425px] md:max-w-max p-8'>
           <DialogHeader>
-            <DialogTitle className='text-2xl text-center'>
+            <DialogTitle className='text-2xl text-center mt-2 mb-6'>
               Nos prochaines animations
             </DialogTitle>
             <div className='text-xl lg:text-2xl'>
-              <ul>
-                <li>
-                  le 5/04 au Fût et à Mesure :
-                  <Link
-                    href='https://tally.so/r/wM7DN8'
-                    target='_blank'
-                    className='ml-2 p-1 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
-                  >
-                    Je m'inscris !
-                    <GiClick className='ml-2 inline align-middle' />
-                  </Link>
-                </li>
+              <ul className='flex flex-col items-start gap-4'>
                 <li>
                   le 3/05 au Fût et à Mesure :
                   <Link
@@ -103,8 +92,8 @@ export function Events() {
         >
           <div className='relative'>
             <span className='absolute flex h-6 w-6 -top-3 -right-4'>
-              <PiNumberCircleTwoFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
-              <PiNumberCircleTwoFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange2' />
+              <PiNumberCircleOneFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
+              <PiNumberCircleOneFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange2' />
             </span>
             <div className='flex place-content-center items-baseline'>
               <FaCalendarCheck className='mr-2 text-xl md:text-4xl' />
@@ -119,21 +108,11 @@ export function Events() {
           <DrawerTitle className='text-2xl text-center'>
             Nos prochaines animations
           </DrawerTitle>
-          <div className='text-xl'>
-            <ul>
+          <div className='text-xl my-4'>
+            <ul className='flex flex-col gap-4 items-center text-center'>
               <li>
-                le 5/04 au Fût et à Mesure : <br />
-                <Link
-                  href='https://tally.so/r/wM7DN8'
-                  target='_blank'
-                  className='ml-2 font-playfair text-xl text-orange2'
-                >
-                  Je m'inscris !
-                  <GiClick className='ml-2 inline align-middle' />
-                </Link>
-              </li>
-              <li>
-                le 3/05 au Fût et à Mesure : <br />
+                le 3/05 au Fût et à Mesure
+                <br />
                 <Link
                   href='https://tally.so/r/mOEaEk'
                   target='_blank'
