@@ -25,7 +25,7 @@ import {
 import Link from 'next/link'
 import { FaCalendarCheck } from 'react-icons/fa6'
 import { GiClick } from 'react-icons/gi'
-import { PiNumberCircleOneFill } from 'react-icons/pi'
+import { PiNumberCircleThreeFill } from 'react-icons/pi'
 
 export function Events() {
   const [open, setOpen] = React.useState(false)
@@ -43,8 +43,8 @@ export function Events() {
           >
             <div className='relative'>
               <span className='absolute flex h-6 w-6 -top-3 -right-4'>
-                <PiNumberCircleOneFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
-                <PiNumberCircleOneFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
+                <PiNumberCircleThreeFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
+                <PiNumberCircleThreeFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
               </span>
               <div className='flex place-content-center items-baseline'>
                 <FaCalendarCheck className='mr-2 text-xl md:text-2xl' />
@@ -72,6 +72,28 @@ export function Events() {
                     <GiClick className='ml-2 inline align-middle' />
                   </Link>
                 </li>
+                <li>
+                  le 15/05 au B29 :
+                  <Link
+                    href='https://tally.so/r/wLor6y'
+                    target='_blank'
+                    className='ml-2 p-1 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
+                  >
+                    Je m'inscris !
+                    <GiClick className='ml-2 inline align-middle' />
+                  </Link>
+                </li>
+                <li>
+                  le 24/05 au Fût et à Mesure :
+                  <Link
+                    href='https://tally.so/r/mZQ7v5'
+                    target='_blank'
+                    className='ml-2 p-1 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
+                  >
+                    Je m'inscris !
+                    <GiClick className='ml-2 inline align-middle' />
+                  </Link>
+                </li>
               </ul>
             </div>
             <DialogDescription />
@@ -92,8 +114,8 @@ export function Events() {
         >
           <div className='relative'>
             <span className='absolute flex h-6 w-6 -top-3 -right-4'>
-              <PiNumberCircleOneFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
-              <PiNumberCircleOneFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange2' />
+              <PiNumberCircleThreeFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
+              <PiNumberCircleThreeFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange2' />
             </span>
             <div className='flex place-content-center items-baseline'>
               <FaCalendarCheck className='mr-2 text-xl md:text-4xl' />
@@ -115,6 +137,30 @@ export function Events() {
                 <br />
                 <Link
                   href='https://tally.so/r/mOEaEk'
+                  target='_blank'
+                  className='ml-2 font-playfair text-xl text-orange2'
+                >
+                  Je m'inscris !
+                  <GiClick className='ml-2 inline align-middle' />
+                </Link>
+              </li>
+              <li>
+                le 15/05 au B29
+                <br />
+                <Link
+                  href='https://tally.so/r/wLor6y'
+                  target='_blank'
+                  className='ml-2 font-playfair text-xl text-orange2'
+                >
+                  Je m'inscris !
+                  <GiClick className='ml-2 inline align-middle' />
+                </Link>
+              </li>
+              <li>
+                le 24/05 au Fût et à Mesure
+                <br />
+                <Link
+                  href='https://tally.so/r/mZQ7v5'
                   target='_blank'
                   className='ml-2 font-playfair text-xl text-orange2'
                 >
