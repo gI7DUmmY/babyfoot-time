@@ -31,6 +31,34 @@ export function Events() {
   const [open, setOpen] = React.useState(false)
   const isDesktop = useMediaQuery('(min-width: 768px)')
 
+  const nbEvents = (
+    <>
+      {/* <span className='absolute flex h-6 w-6 -top-3 -right-4'>
+        <PiNumberCircleOneFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
+        <PiNumberCircleOneFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
+      </span> */}
+    </>
+  )
+
+  const datesEvents = (
+    <>
+      <p className='text-center'>Ici nos prochaines dates à venir !</p>
+      {/* <ul className='flex flex-col items-start gap-4'>
+        <li>
+          le 24/05 au Fût et à Mesure :
+          <Link
+            href='https://tally.so/r/mZQ7v5'
+            target='_blank'
+            className='ml-2 p-1 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
+          >
+            Je m'inscris !
+            <GiClick className='ml-2 inline align-middle' />
+          </Link>
+        </li>
+      </ul> */}
+    </>
+  )
+
   // version desktop > 768px
   if (isDesktop) {
     return (
@@ -42,10 +70,7 @@ export function Events() {
             className='border-orange2 p-3 my-2 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 hover:cursor-pointer md:p-6 md:text-4xl'
           >
             <div className='relative'>
-              <span className='absolute flex h-6 w-6 -top-3 -right-4'>
-                <PiNumberCircleOneFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
-                <PiNumberCircleOneFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
-              </span>
+              {nbEvents}
               <div className='flex place-content-center items-baseline'>
                 <FaCalendarCheck className='mr-2 text-xl md:text-2xl' />
                 Venez à nos animations !
@@ -59,21 +84,7 @@ export function Events() {
             <DialogTitle className='text-2xl text-center mt-2 mb-6'>
               Nos prochaines animations
             </DialogTitle>
-            <div className='text-xl lg:text-2xl'>
-              <ul className='flex flex-col items-start gap-4'>
-                <li>
-                  le 24/05 au Fût et à Mesure :
-                  <Link
-                    href='https://tally.so/r/mZQ7v5'
-                    target='_blank'
-                    className='ml-2 p-1 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
-                  >
-                    Je m'inscris !
-                    <GiClick className='ml-2 inline align-middle' />
-                  </Link>
-                </li>
-              </ul>
-            </div>
+            <div className='text-xl lg:text-2xl'>{datesEvents}</div>
             <DialogDescription />
           </DialogHeader>
         </DialogContent>
@@ -91,10 +102,7 @@ export function Events() {
           className='border-orange2 p-3 my-2 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
         >
           <div className='relative'>
-            <span className='absolute flex h-6 w-6 -top-3 -right-4'>
-              <PiNumberCircleOneFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
-              <PiNumberCircleOneFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange2' />
-            </span>
+            {nbEvents}
             <div className='flex place-content-center items-baseline'>
               <FaCalendarCheck className='mr-2 text-xl md:text-4xl' />
               Venez à nos animations !
@@ -108,22 +116,7 @@ export function Events() {
           <DrawerTitle className='text-2xl text-center'>
             Nos prochaines animations
           </DrawerTitle>
-          <div className='text-xl my-4'>
-            <ul className='flex flex-col gap-4 items-center text-center'>
-              <li>
-                le 24/05 au Fût et à Mesure
-                <br />
-                <Link
-                  href='https://tally.so/r/mZQ7v5'
-                  target='_blank'
-                  className='ml-2 font-playfair text-xl text-orange2'
-                >
-                  Je m'inscris !
-                  <GiClick className='ml-2 inline align-middle' />
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <div className='text-xl my-4'>{datesEvents}</div>
           <DrawerDescription />
         </DrawerHeader>
         <DrawerFooter className='pt-2'>
