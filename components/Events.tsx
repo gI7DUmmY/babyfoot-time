@@ -28,9 +28,26 @@ import { GiClick } from 'react-icons/gi'
 import { PiNumberCircleOneFill } from 'react-icons/pi'
 
 export function Events() {
+  interface Event {
+    date: Date
+    lieu: string
+    link: string
+  }
+
   const [open, setOpen] = React.useState(false)
   const isDesktop = useMediaQuery('(min-width: 768px)')
 
+  // tableau des events
+  const data: Event[] = [
+    // {
+    //   date: new Date('2025, 06, 01'),
+    //   lieu: 'au fut et a mesure',
+    //   link: 'https://free.fr',
+    // },
+    // { date: new Date('2025, 06, 08'), lieu: 'au b29', link: 'https://free.fr' },
+  ]
+
+  // pastille events
   const nbEvents = (
     <>
       {/* <span className='absolute flex h-6 w-6 -top-3 -right-4'>
@@ -40,22 +57,30 @@ export function Events() {
     </>
   )
 
+  // affichage des events
   const datesEvents = (
     <>
-      <p className='text-center'>Ici nos prochaines dates à venir !</p>
-      {/* <ul className='flex flex-col items-start gap-4'>
-        <li>
-          le 24/05 au Fût et à Mesure :
-          <Link
-            href='https://tally.so/r/mZQ7v5'
-            target='_blank'
-            className='ml-2 p-1 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
-          >
-            Je m'inscris !
-            <GiClick className='ml-2 inline align-middle' />
-          </Link>
-        </li>
-      </ul> */}
+      {data.length === 0 && (
+        <p className='text-center'>Ici nos prochaines dates à venir !</p>
+      )}
+
+      {data.length > 0 && (
+        <ul className='flex flex-col items-start gap-4'>
+          {data.map(event => (
+            <li>
+              le {event.date.toLocaleDateString('fr-FR')} : {event.lieu}
+              <Link
+                href={event.link}
+                target='_blank'
+                className='ml-2 p-1 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
+              >
+                Je m'inscris !
+                <GiClick className='ml-2 inline align-middle' />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
     </>
   )
 
