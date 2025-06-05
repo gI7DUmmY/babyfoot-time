@@ -39,21 +39,20 @@ export function Events() {
 
   // tableau des events
   const data: Event[] = [
-    // {
-    //   date: new Date('2025, 06, 01'),
-    //   lieu: 'au fut et a mesure',
-    //   link: 'https://free.fr',
-    // },
-    // { date: new Date('2025, 06, 08'), lieu: 'au b29', link: 'https://free.fr' },
+    {
+      date: new Date('2025, 06, 21'),
+      lieu: 'Au fût et à mesure',
+      link: 'https://tally.so/r/3q74eg',
+    },
   ]
 
   // pastille events
   const nbEvents = (
     <>
-      {/* <span className='absolute flex h-6 w-6 -top-3 -right-4'>
+      <span className='absolute flex h-6 w-6 -top-3 -right-4'>
         <PiNumberCircleOneFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
         <PiNumberCircleOneFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
-      </span> */}
+      </span>
     </>
   )
 
@@ -65,10 +64,11 @@ export function Events() {
       )}
 
       {data.length > 0 && (
-        <ul className='flex flex-col items-start gap-4'>
+        <ul className='flex flex-col items-center text-center gap-4 md:items-start md:text-left'>
           {data.map(event => (
-            <li>
-              le {event.date.toLocaleDateString('fr-FR')} : {event.lieu}
+            <li key={event.date.toString()}>
+              le {event.date.toLocaleDateString('fr-FR')} : {event.lieu}{' '}
+              <br className='md:hidden' />
               <Link
                 href={event.link}
                 target='_blank'
