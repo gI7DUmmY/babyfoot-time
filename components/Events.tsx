@@ -40,7 +40,7 @@ export function Events() {
   // tableau des events
   const data: Event[] = [
     {
-      date: new Date('2025, 08, 09'),
+      date: new Date('2025-08-09'),
       lieu: 'Au fût et à mesure',
       link: 'https://tally.so/r/waqP9B',
     },
