@@ -25,6 +25,7 @@ import {
 import Link from 'next/link'
 import { FaCalendarCheck } from 'react-icons/fa6'
 import { GiClick } from 'react-icons/gi'
+import { PiQuestionFill } from 'react-icons/pi'
 import { PiNumberCircleOneFill } from 'react-icons/pi'
 
 export function Events() {
@@ -49,10 +50,17 @@ export function Events() {
   // pastille events
   const nbEvents = (
     <>
-      <span className='absolute flex h-6 w-6 -top-3 -right-4'>
-        <PiNumberCircleOneFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
-        <PiNumberCircleOneFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
-      </span>
+      {data.length === 0 ? (
+        <span className='absolute flex h-6 w-6 -top-3 -right-4'>
+          <PiQuestionFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
+          <PiQuestionFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
+        </span>
+      ) : (
+        <span className='absolute flex h-6 w-6 -top-3 -right-4'>
+          <PiNumberCircleOneFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
+          <PiNumberCircleOneFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
+        </span>
+      )}
     </>
   )
 
