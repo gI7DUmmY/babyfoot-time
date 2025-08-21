@@ -14,7 +14,7 @@ const Partners = () => {
         <Link href='https://aufutetamesure.fr/' target='blank'>
           <Image
             src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets//logo_fut.png'
-            alt='logo b29'
+            alt='logo fut'
             width='447'
             height='677'
             className='h-28 w-auto md:h-36'
