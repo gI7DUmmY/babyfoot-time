@@ -109,6 +109,6 @@
 @media (max-width: 431px) {
   #titre {
     background-image: url('https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets//babyfoot-time-hi_mobile.webp');
-    @apply bg-cover;
+    @apply bg-contain;
   }
 }
