@@ -126,7 +126,7 @@ const Services = () => {
           </CardHeader>
           <CardContent className='md:px-20'>
             <p className='text-pretty'>
-              un joueur expert se déplace à votre domicile avec un baby-foot
+              un joueur pro se déplace à votre domicile avec un baby-foot
               pour une initiation ou un perfectionnement
             </p>
           </CardContent>

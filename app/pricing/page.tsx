@@ -33,7 +33,7 @@ const page = () => {
                 coaching
               </li>
               <li>
-                <FaCheck className='inline text-orange1 mr-2' />1 joueur expert
+                <FaCheck className='inline text-orange1 mr-2' />1 joueur pro
               </li>
               <li>
                 <FaCheck className='inline text-orange1 mr-2' />1 table de

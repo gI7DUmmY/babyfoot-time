@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import { FaExternalLinkAlt } from 'react-icons/fa'
 import Laurent from '@/public/assets/images/laurent.png'
 
 const About = () => {
@@ -21,16 +19,7 @@ const About = () => {
         <p className='my-4'>
           Habitué à coacher, fédérer et animer grâce à plus de 15 ans
           d'expérience de coach sportif et ayant repris la compétition à haut
-          niveau au sein du club{' '}
-          <Link
-            href='https://www.toulouseft.fr/'
-            target='_blank'
-            className='lien-ext'
-          >
-            Toulouse Football de Table
-            <FaExternalLinkAlt className='inline mx-1 text-sm align-baseline' />
-          </Link>{' '}
-          depuis quelques années, j'ai aujourd'hui à coeur de partager ma
+          niveau depuis quelques années, j'ai aujourd'hui à coeur de partager ma
           passion et promouvoir ainsi le baby-foot sportif et loisir au travers
           d'animations personnalisées conviviales.
         </p>
