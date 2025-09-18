@@ -43,7 +43,7 @@ export function Events() {
     {
       date: new Date('2025-10-11T19:30'),
       lieu: 'All. du Parc, 12850 Onet-le-Château',
-      link: 'https://maps.app.goo.gl/bpXUAmMDGEawuirg8',
+      link: 'https://tally.so/r/wM094Y',
     },
   ]
 
@@ -83,22 +83,15 @@ export function Events() {
                 minute: '2-digit',
                 timeZone: 'Europe/Paris',
               })}{' '}
-              :
+              <span className='hidden md:inline'>:</span>
+              <br className='md:hidden' /> {event.lieu}{' '}
               <br className='md:hidden' />
-              {/* <Link
-                href={event.link}
-                target='_blank'
-                className='ml-2 p-1 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
-              >
-                Je m'inscris !
-                <GiClick className='ml-2 inline align-middle' />
-              </Link> */}
               <Link
                 href={event.link}
                 target='_blank'
                 className='ml-2 p-1 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
               >
-                {event.lieu}
+                Je m'inscris !
                 <GiClick className='ml-2 inline align-middle' />
               </Link>
             </li>
