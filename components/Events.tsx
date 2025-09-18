@@ -40,11 +40,11 @@ export function Events() {
 
   // tableau des events
   const data: Event[] = [
-    // {
-    //   date: new Date('2025-08-09'),
-    //   lieu: 'Au fût et à mesure',
-    //   link: 'https://tally.so/r/waqP9B',
-    // },
+    {
+      date: new Date('2025-10-11T19:30'),
+      lieu: 'All. du Parc, 12850 Onet-le-Château',
+      link: 'https://maps.app.goo.gl/bpXUAmMDGEawuirg8',
+    },
   ]
 
   // pastille events
@@ -74,15 +74,31 @@ export function Events() {
       {data.length > 0 && (
         <ul className='flex flex-col items-center text-center gap-4 md:items-start md:text-left'>
           {data.map(event => (
-            <li key={event.date.toString()}>
-              le {event.date.toLocaleDateString('fr-FR')} : {event.lieu}{' '}
+            <li key={event.date.toLocaleString()}>
+              {event.date.toLocaleString('fr-FR', {
+                day: 'numeric',
+                month: 'numeric',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                timeZone: 'Europe/Paris',
+              })}{' '}
+              :
               <br className='md:hidden' />
-              <Link
+              {/* <Link
                 href={event.link}
                 target='_blank'
                 className='ml-2 p-1 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
               >
                 Je m'inscris !
+                <GiClick className='ml-2 inline align-middle' />
+              </Link> */}
+              <Link
+                href={event.link}
+                target='_blank'
+                className='ml-2 p-1 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
+              >
+                {event.lieu}
                 <GiClick className='ml-2 inline align-middle' />
               </Link>
             </li>
