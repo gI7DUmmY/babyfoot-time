@@ -18,7 +18,7 @@ import { Events } from './Events'
 const Services = () => {
   return (
     <section>
-      <div className='w-full p-3 flex place-content-center'>
+      <div className='w-full p-3 flex place-content-center sticky top-40 lg:top-60'>
         <Events />
       </div>
       <div className='w-full flex flex-col flex-wrap place-content-evenly lg:flex-row lg:place-content-around'>
@@ -126,8 +126,8 @@ const Services = () => {
           </CardHeader>
           <CardContent className='md:px-20'>
             <p className='text-pretty'>
-              un joueur pro se déplace à votre domicile avec un baby-foot
-              pour une initiation ou un perfectionnement
+              un joueur pro se déplace à votre domicile avec un baby-foot pour
+              une initiation ou un perfectionnement
             </p>
           </CardContent>
         </Card>
