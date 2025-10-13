@@ -40,11 +40,11 @@ export function Events() {
 
   // tableau des events
   const data: Event[] = [
-    {
-      date: new Date('2025-10-11T19:30'),
-      lieu: 'All. du Parc, 12850 Onet-le-Château',
-      link: 'https://tally.so/r/wM094Y',
-    },
+    // {
+    //   date: new Date('2025-10-11T19:30'),
+    //   lieu: 'All. du Parc, 12850 Onet-le-Château',
+    //   link: 'https://tally.so/r/wM094Y',
+    // },
   ]
 
   // pastille events
@@ -109,7 +109,7 @@ export function Events() {
           <Button
             variant='outline'
             asChild
-            className='border-orange2 p-3 my-2 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 hover:cursor-pointer md:p-6 md:text-4xl'
+            className='border-orange2 p-3 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 hover:cursor-pointer md:p-6 md:text-4xl'
           >
             <div className='relative'>
               {nbEvents}

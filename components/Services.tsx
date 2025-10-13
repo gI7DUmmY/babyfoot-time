@@ -18,7 +18,7 @@ import { Events } from './Events'
 const Services = () => {
   return (
     <section>
-      <div className='w-full p-3 flex place-content-center sticky top-40 lg:top-60'>
+      <div className='w-full pt-4 flex place-content-center sticky top-40 lg:top-60'>
         <Events />
       </div>
       <div className='w-full flex flex-col flex-wrap place-content-evenly lg:flex-row lg:place-content-around'>
