@@ -40,11 +40,11 @@ export function Events() {
 
   // tableau des events
   const data: Event[] = [
-    // {
-    //   date: new Date('2025-10-11T19:30'),
-    //   lieu: 'All. du Parc, 12850 Onet-le-Château',
-    //   link: 'https://tally.so/r/wM094Y',
-    // },
+    {
+      date: new Date('2025-12-13T19:00'),
+      lieu: 'Au fût et à mesure',
+      link: 'https://tally.so/r/3E4VQ2',
+    },
   ]
 
   // pastille events
