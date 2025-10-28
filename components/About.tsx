@@ -9,7 +9,7 @@ const About = () => {
         qui sommes-nous ?
       </h3>
 
-      <div className="2xl:flex flex-row justify-center">
+      <div className="2xl:flex 2xl:flex-row 2xl:justify-center">
         <div className="px-5 text-justify font-lora max-w-5xl mx-auto lg:text-2xl 2xl:mx-0">
           <p>
             Le temps passé à jouer au baby-foot au collège et au lycée m'a
