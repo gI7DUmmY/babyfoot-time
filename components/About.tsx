@@ -9,8 +9,8 @@ const About = () => {
         qui sommes-nous ?
       </h3>
 
-      <div className="2xl:flex 2xl:flex-row 2xl:justify-center">
-        <div className="px-5 text-justify font-lora max-w-5xl mx-auto lg:text-2xl 2xl:mx-0">
+      <div className="4k:flex 4k:flex-row 4k:justify-center">
+        <div className="px-5 text-justify font-lora max-w-5xl mx-auto lg:text-2xl 4k:mx-0">
           <p>
             Le temps passé à jouer au baby-foot au collège et au lycée m'a
             permis d'intégrer très tôt la compétition. D'être sacré meilleur
@@ -26,7 +26,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="px-1 text-center w-full min-h-full font-lora mx-auto md:px-5 lg:text-2xl lg:max-w-5xl 2xl:mx-0">
+        <div className="px-1 text-center w-full min-h-full font-lora mx-auto md:px-5 lg:text-2xl lg:max-w-5xl 4k:mx-0">
           <figure className="md:flex bg-gray-900 rounded-xl p-8 min-h-full md:p-0">
             <Image
               className="w-24 h-24 md:w-48 md:h-48 md:rounded-none rounded-full mx-auto my-auto"
