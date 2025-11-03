@@ -4,12 +4,12 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/ficheTarif";
-import { FaCheck } from "react-icons/fa";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { TiArrowBack } from "react-icons/ti";
-import { PiListChecksFill } from "react-icons/pi";
+} from "@/components/ui/ficheTarif"
+import { FaCheck } from "react-icons/fa"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { TiArrowBack } from "react-icons/ti"
+import { PiListChecksFill } from "react-icons/pi"
 
 const page = () => {
   return (
@@ -52,7 +52,7 @@ const page = () => {
           <CardHeader>
             <CardTitle>
               <div className="text-orange1">Tournoi</div>
-              {/*<div className='lining-nums'>750&euro;</div>*/}
+              <div className='lining-nums lowercase'>prix à définir</div>
             </CardTitle>
             <CardDescription>
               Tournoi clé en main pour environ 30 personnes
@@ -146,7 +146,7 @@ const page = () => {
         </Button>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default page;
+export default page
