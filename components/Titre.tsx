@@ -26,7 +26,7 @@ const Titre = () => {
           src={event}
           alt='event'
           sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-          className='absolute top-0 left-[30%] h-1/4 w-auto md:left-[38%] lg:left-[42%] xl:left-[40%]'
+          className='absolute top-0 left-[33%] h-1/4 w-auto md:left-[38%] lg:left-[42%] xl:left-[40%]'
         />
       </div>
     </section>
