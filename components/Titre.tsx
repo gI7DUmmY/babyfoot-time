@@ -18,7 +18,7 @@ const Titre = () => {
           playing
           loop
           muted={true}
-          style={{width: '100%', height: 'auto', aspectRatio: '9/16'}}
+          style={{width: '100%', height: '100%', aspectRatio: '9/16'}}
           className='static'
         />
 
