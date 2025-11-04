@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://babyfoot-time.fr'),
   title: 'Babyfoot Time',
   description:
-    "Babyfoot Time : spécialiste de l'animation autour du baby-foot pour vos évènements privés et publics: personnels et professionnels. Ambiance chaleureuse et conviviale garantie! Location de baby-foot Bonzini : modèle officiel pour la compétition. Transport, montage, réglage et démontage des tables. Pour s'amuser, favoriser les échanges et se défouler. Activité mixte, intergénérationnelle, ludique et originale.",
+    "Babyfoot Time : spécialiste de l'animation autour du baby-foot pour vos évènements privés et publics: personnels et professionnels. Location de baby-foot Bonzini : modèle officiel pour la compétition. Transport, montage, réglage, nettoyage, réparation, changement de pièces (tapis ; barre ; poignée ; etc...) et démontage des tables. Pour s'amuser, favoriser les échanges et se défouler. Activité mixte, intergénérationnelle, ludique et originale.",
   openGraph: {
     title: 'Babyfoot Time',
     description:
-      "Babyfoot Time : spécialiste de l'animation autour du baby-foot pour vos évènements privés et publics: personnels et professionnels. Ambiance chaleureuse et conviviale garantie! Location de baby-foot Bonzini : modèle officiel pour la compétition. Transport, montage, réglage et démontage des tables. Pour s'amuser, favoriser les échanges et se défouler. Activité mixte, intergénérationnelle, ludique et originale.",
+      "Babyfoot Time : spécialiste de l'animation autour du baby-foot pour vos évènements privés et publics: personnels et professionnels. Location de baby-foot Bonzini : modèle officiel pour la compétition. Transport, montage, réglage, nettoyage, réparation, changement de pièces (tapis ; barre ; poignée ; etc...) et démontage des tables. Pour s'amuser, favoriser les échanges et se défouler. Activité mixte, intergénérationnelle, ludique et originale.",
     url: 'https://babyfoot-time.fr',
     siteName: 'Babyfoot Time',
     images: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     'twitter:url': 'https://babyfoot-time.fr',
     'twitter:title': 'Babyfoot Time',
     'twitter:description':
-      "Babyfoot Time : spécialiste de l'animation autour du baby-foot pour vos évènements privés et publics: personnels et professionnels. Ambiance chaleureuse et conviviale garantie! Location de baby-foot Bonzini : modèle officiel pour la compétition. Transport, montage, réglage et démontage des tables. Pour s'amuser, favoriser les échanges et se défouler. Activité mixte, intergénérationnelle, ludique et originale.",
+      "Babyfoot Time : spécialiste de l'animation autour du baby-foot pour vos évènements privés et publics: personnels et professionnels. Location de baby-foot Bonzini : modèle officiel pour la compétition. Transport, montage, réglage, nettoyage, réparation, changement de pièces (tapis ; barre ; poignée ; etc...) et démontage des tables. Pour s'amuser, favoriser les échanges et se défouler. Activité mixte, intergénérationnelle, ludique et originale.",
   },
 }
 

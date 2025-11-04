@@ -113,7 +113,8 @@ const Services = () => {
             </CardTitle>
           </CardHeader>
           <CardContent className="md:px-20">
-            <p>entretien de vos baby-foots sur Toulouse et ses environs</p>
+            <p>entretien/réparation de vos baby-foots sur Toulouse et ses environs</p>
+            <p>nettoyage/changement de pièces (tapis, ressorts, etc...)</p>
           </CardContent>
         </Card>
 
