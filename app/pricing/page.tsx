@@ -88,7 +88,7 @@ const page = () => {
               <div className="lining-nums">100&euro;</div>
             </CardTitle>
             <CardDescription>
-              Révision et entretien de votre baby-foot
+              Révision, réparation et entretien de votre baby-foot
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -115,7 +115,7 @@ const page = () => {
               </li>
               <li>
                 <FaCheck className="inline text-orange1 mr-2" />
-                Changement de pièces à envisager sur devis
+                Changement de pièces (tapis ; barre ; poignée ; ressort ; etc...) à envisager sur devis
               </li>
             </ul>
           </CardContent>
