@@ -3,29 +3,29 @@ import {
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+  CardTitle
+} from '@/components/ui/card'
 
-import { IoBusiness, IoTimer } from "react-icons/io5";
-import { GiPalette, GiPartyPopper } from "react-icons/gi";
-import { FaHandshake, FaScrewdriverWrench } from "react-icons/fa6";
-import { BiSolidChevronsUp } from "react-icons/bi";
-import { Button } from "./ui/button";
-import Link from "next/link";
-import { FaHandPointRight } from "react-icons/fa";
-import { Events } from "./Events";
+import { IoBusiness, IoTimer } from 'react-icons/io5'
+import { GiPalette, GiPartyPopper } from 'react-icons/gi'
+import { FaHandshake, FaScrewdriverWrench } from 'react-icons/fa6'
+import { BiSolidChevronsUp } from 'react-icons/bi'
+import { Button } from './ui/button'
+import Link from 'next/link'
+import { FaHandPointRight } from 'react-icons/fa'
+import { Events } from './Events'
 
 const Services = () => {
   return (
     <section>
-      <div className="w-full pt-4 flex place-content-center sticky top-40 lg:top-60">
+      <div className='w-full pt-4 flex place-content-center sticky top-40 z-10 lg:top-60'>
         <Events />
       </div>
-      <div className="w-full flex flex-col flex-wrap place-content-evenly lg:flex-row lg:justify-evenly">
-        <Card className="max-w-prose">
+      <div className='w-full flex flex-col flex-wrap place-content-evenly -z-10 lg:flex-row lg:justify-evenly'>
+        <Card className='max-w-prose'>
           <CardHeader>
             <CardTitle>
-              <IoBusiness className="mx-auto" />
+              <IoBusiness className='mx-auto' />
               pour votre entreprise
             </CardTitle>
             <CardDescription></CardDescription>
@@ -40,10 +40,10 @@ const Services = () => {
           </CardContent>
         </Card>
 
-        <Card className="max-w-prose">
+        <Card className='max-w-prose'>
           <CardHeader>
             <CardTitle>
-              <GiPartyPopper className="mx-auto" /> pour vos soirées privées
+              <GiPartyPopper className='mx-auto' /> pour vos soirées privées
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -56,14 +56,14 @@ const Services = () => {
           </CardContent>
         </Card>
 
-        <Card className="max-w-prose">
+        <Card className='max-w-prose'>
           <CardHeader>
             <CardTitle>
-              <IoTimer className="mx-auto" />
+              <IoTimer className='mx-auto' />
               louez
             </CardTitle>
           </CardHeader>
-          <CardContent className="md:px-24">
+          <CardContent className='md:px-24'>
             <p>
               une ou plusieurs tables bonzini b90 itsf (table officielle en
               compétition)
@@ -71,10 +71,10 @@ const Services = () => {
           </CardContent>
         </Card>
 
-        <Card className="max-w-prose">
+        <Card className='max-w-prose'>
           <CardHeader>
             <CardTitle>
-              <GiPalette className="mx-auto" />
+              <GiPalette className='mx-auto' />
               personnalisez
             </CardTitle>
           </CardHeader>
@@ -88,10 +88,10 @@ const Services = () => {
           </CardContent>
         </Card>
 
-        <Card className="max-w-prose">
+        <Card className='max-w-prose'>
           <CardHeader>
             <CardTitle>
-              <FaHandshake className="mx-auto" />
+              <FaHandshake className='mx-auto' />
               nous gérons
             </CardTitle>
           </CardHeader>
@@ -105,28 +105,31 @@ const Services = () => {
           </CardContent>
         </Card>
 
-        <Card id="maintenance" className="max-w-prose">
+        <Card id='maintenance' className='max-w-prose'>
           <CardHeader>
             <CardTitle>
-              <FaScrewdriverWrench className="mx-auto" />
+              <FaScrewdriverWrench className='mx-auto' />
               maintenance
             </CardTitle>
           </CardHeader>
-          <CardContent className="md:px-20">
-            <p>entretien/réparation de vos baby-foots sur Toulouse et ses environs</p>
+          <CardContent className='md:px-20'>
+            <p>
+              entretien/réparation de vos baby-foots sur Toulouse et ses
+              environs
+            </p>
             <p>nettoyage/changement de pièces (tapis, ressorts, etc...)</p>
           </CardContent>
         </Card>
 
-        <Card className="max-w-prose">
+        <Card className='max-w-prose'>
           <CardHeader>
             <CardTitle>
-              <BiSolidChevronsUp className="mx-auto" />
+              <BiSolidChevronsUp className='mx-auto' />
               Cours
             </CardTitle>
           </CardHeader>
-          <CardContent className="md:px-20">
-            <p className="text-pretty">
+          <CardContent className='md:px-20'>
+            <p className='text-pretty'>
               un joueur pro se déplace à votre domicile avec un baby-foot pour
               une initiation ou un perfectionnement
             </p>
@@ -134,20 +137,20 @@ const Services = () => {
         </Card>
       </div>
 
-      <div id="tarifs" className="flex place-content-center mt-3">
+      <div id='tarifs' className='flex place-content-center mt-3'>
         <Button
-          variant="outline"
+          variant='outline'
           asChild
-          className="border-orange2 p-3 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-4xl"
+          className='border-orange2 p-3 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
         >
-          <Link href="/pricing" className="capitalize">
-            <FaHandPointRight className="mr-2 text-xl md:text-4xl" />
+          <Link href='/pricing' className='capitalize'>
+            <FaHandPointRight className='mr-2 text-xl md:text-4xl' />
             Consultez nos tarifs
           </Link>
         </Button>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Services;
+export default Services
