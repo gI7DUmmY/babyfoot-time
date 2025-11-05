@@ -10,7 +10,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogDescription,
-  DialogTrigger,
+  DialogTrigger
 } from '@/components/ui/dialog'
 import {
   Drawer,
@@ -20,7 +20,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerDescription,
-  DrawerTrigger,
+  DrawerTrigger
 } from '@/components/ui/drawer'
 import Link from 'next/link'
 import { FaCalendarCheck } from 'react-icons/fa6'
@@ -43,18 +43,18 @@ export function Events() {
     {
       date: new Date('2025-11-08T19:00'),
       lieu: 'Au fût et à mesure',
-      link: 'https://tally.so/r/w566lo',
+      link: 'https://tally.so/r/w566lo'
     },
     {
       date: new Date('2025-11-19T19:00'),
       lieu: 'Carré des sports',
-      link: 'https://tally.so/r/3NKK8B',
+      link: 'https://tally.so/r/3NKK8B'
     },
     {
       date: new Date('2025-12-13T19:00'),
       lieu: 'Au fût et à mesure',
-      link: 'https://tally.so/r/3E4VQ2',
-    },
+      link: 'https://tally.so/r/3E4VQ2'
+    }
   ]
 
   // pastille events
@@ -91,7 +91,7 @@ export function Events() {
                 year: 'numeric',
                 hour: '2-digit',
                 minute: '2-digit',
-                timeZone: 'Europe/Paris',
+                timeZone: 'Europe/Paris'
               })}{' '}
               <span className='hidden md:inline'>:</span>
               <br className='md:hidden' /> {event.lieu}{' '}
@@ -99,7 +99,7 @@ export function Events() {
               <Link
                 href={event.link}
                 target='_blank'
-                className='ml-2 p-1 font-playfair text-xl text-orange2 hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
+                className='ml-2 p-1 font-playfair text-xl text-orange2 animate-pulse hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
               >
                 Je m'inscris !
                 <GiClick className='ml-2 inline align-middle' />
