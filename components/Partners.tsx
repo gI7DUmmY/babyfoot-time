@@ -10,7 +10,7 @@ const Partners = () => {
         <FaPeopleGroup className='inline mr-3 align-text-top pt-1' />
         Nos partenaires
       </h3>
-      <div className='w-full flex flex-row place-content-evenly lg:place-content-center lg:gap-32'>
+      <div className='w-full flex flex-row flex-wrap place-content-evenly gap-4 lg:place-content-center lg:gap-32'>
         <Link href='https://aufutetamesure.fr/' target='blank'>
           <Image
             src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets//logo_fut.png'
@@ -24,6 +24,24 @@ const Partners = () => {
           <Image
             src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets//logo_b29.webp'
             alt='logo b29'
+            width='512'
+            height='512'
+            className='h-28 w-auto md:h-36'
+          />
+        </Link>
+        <Link href='https://ffbabyfoot.fr/' target='blank'>
+          <Image
+            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_ffbf.svg'
+            alt='logo ffbf'
+            width='512'
+            height='512'
+            className='h-28 w-auto md:h-36'
+          />
+        </Link>
+        <Link href='https://babyfoot-ftbm.fr/' target='blank'>
+          <Image
+            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_ftbm.png'
+            alt='logo ftbm'
             width='512'
             height='512'
             className='h-28 w-auto md:h-36'
