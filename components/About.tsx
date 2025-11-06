@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import Laurent from "@/public/assets/images/laurent.png";
+import {FaExternalLinkAlt} from 'react-icons/fa'
 
 const About = () => {
   return (
@@ -19,7 +21,7 @@ const About = () => {
           </p>
           <p className="my-4">
             Habitué à coacher, fédérer et animer grâce à plus de 15 ans
-            d'expérience de coach sportif et ayant repris la compétition à haut
+            d'expérience de coach sportif et ayant repris la compétition au sein du <Link href="https://babyfoot-ftbm.fr/" target="_blank" className="lien-ext">club FTBM <FaExternalLinkAlt className='inline mx-1 text-sm align-baseline' /></Link> à haut
             niveau depuis quelques années, j'ai aujourd'hui à coeur de partager
             ma passion et promouvoir ainsi le baby-foot sportif et loisir au
             travers d'animations personnalisées conviviales.

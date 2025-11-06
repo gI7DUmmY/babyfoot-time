@@ -32,10 +32,8 @@ const Services = () => {
           </CardHeader>
           <CardContent>
             <ul>
-              <li>fédérer</li>
-              <li>créer du lien</li>
-              <li>communiquer</li>
-              <li>challenger</li>
+              <li>Team Building</li>
+              <li>after work organisé dans des bars et  restaurants partenaires en région toulousaine</li>
             </ul>
           </CardContent>
         </Card>
