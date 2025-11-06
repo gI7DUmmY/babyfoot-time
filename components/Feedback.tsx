@@ -87,7 +87,7 @@ const Feedback = () => {
                     </p>
                   </blockquote>
                   <div className='text-slate-500 capitalize italic text-base mt-2 md:text-lg'>
-                    Damien
+                    Alex, joueur amateur
                   </div>
                 </CardContent>
               </Card>
@@ -129,20 +129,6 @@ const Feedback = () => {
             </div>
           </CarouselItem>
 
-          <CarouselItem className='md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4'>
-            <div className='p-1'>
-              <Card>
-                <CardContent className='flex flex-col aspect-square items-center justify-evenly p-6 font-medium md:text-lg text-pretty'>
-                  <blockquote>
-                    <p>&laquo; Merci Laurent, c'était top ! &raquo;</p>
-                  </blockquote>
-                  <div className='text-slate-500 capitalize italic text-base mt-2 md:text-lg'>
-                    Lou
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
         </CarouselContent>
       </Carousel>
 
