@@ -49,7 +49,7 @@ export default function RootLayout({
       <body
         className={`${playfair_display.variable} ${playfair.variable} ${lora.variable}`}
       >
-        <header className='fixed top-0 left-0 bg-background w-screen z-10'>
+        <header className='fixed top-0 left-0 bg-background w-screen z-20'>
           <Image
             src={banniere}
             alt='banniere babyfoot time'
