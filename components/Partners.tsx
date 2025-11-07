@@ -29,6 +29,15 @@ const Partners = () => {
             className='h-28 w-auto md:h-36'
           />
         </Link>
+        <Link href='https://www.videostarjeux.com/' target='blank'>
+          <Image
+            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_le-star.png'
+            alt='logo ftbm'
+            width='512'
+            height='512'
+            className='h-auto w-28 md:h-auto md:w-36'
+          />
+        </Link>
         <Link href='https://ffbabyfoot.fr/' target='blank'>
           <Image
             src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_ffbf.svg'
@@ -47,9 +56,9 @@ const Partners = () => {
             className='h-28 w-auto md:h-36'
           />
         </Link>
-        <Link href='https://www.videostarjeux.com/' target='blank'>
+        <Link href='https://www.espritbabyfoot.com/' target='blank'>
           <Image
-            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_le-star.png'
+            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_esprit.png'
             alt='logo ftbm'
             width='512'
             height='512'
