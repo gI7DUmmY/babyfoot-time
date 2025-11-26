@@ -56,6 +56,15 @@ const Partners = () => {
             className='h-28 w-auto md:h-36'
           />
         </Link>
+        <Link href='https://lecarredessports.fr/' target='blank'>
+          <Image
+            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_carre-sports.png'
+            alt='logo carre des sports'
+            width='512'
+            height='512'
+            className='h-28 w-auto md:h-36'
+          />
+        </Link>
         <Link href='https://www.espritbabyfoot.com/' target='blank'>
           <Image
             src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_esprit.png'
