@@ -18,29 +18,29 @@ export const metadata: Metadata = {
     siteName: 'Babyfoot Time',
     images: [
       {
-        url: 'https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/logo_babyfoot-time%20v2.png?alt=media&token=0f5fa164-f97e-48d9-a8a0-18192a9d60c9',
+        url: 'https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_babyfoot-time%20v2.png',
         width: 800,
-        height: 600,
-      },
+        height: 600
+      }
     ],
     locale: 'fr',
-    type: 'website',
+    type: 'website'
   },
   other: {
     'color-scheme': 'dark only',
     'twitter:image':
-      'https://firebasestorage.googleapis.com/v0/b/tft---site.appspot.com/o/logo_babyfoot-time%20v2.png?alt=media&token=0f5fa164-f97e-48d9-a8a0-18192a9d60c9',
+      'https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_babyfoot-time%20v2.png',
     'twitter:card': 'summary_large_image',
     'twitter:domain': 'babyfoot-time.fr',
     'twitter:url': 'https://babyfoot-time.fr',
     'twitter:title': 'Babyfoot Time',
     'twitter:description':
-      "Babyfoot Time : spécialiste de l'animation autour du baby-foot pour vos évènements privés et publics: personnels et professionnels (afterwork etc...). Location de baby-foot Bonzini : modèle officiel pour la compétition. Transport, montage, réglage, nettoyage, réparation, changement de pièces (tapis ; barre ; poignée ; etc...) et démontage des tables. Pour s'amuser, favoriser les échanges et se défouler. Activité mixte, intergénérationnelle, ludique et originale.",
-  },
+      "Babyfoot Time : spécialiste de l'animation autour du baby-foot pour vos évènements privés et publics: personnels et professionnels (afterwork etc...). Location de baby-foot Bonzini : modèle officiel pour la compétition. Transport, montage, réglage, nettoyage, réparation, changement de pièces (tapis ; barre ; poignée ; etc...) et démontage des tables. Pour s'amuser, favoriser les échanges et se défouler. Activité mixte, intergénérationnelle, ludique et originale."
+  }
 }
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode
 }>) {
