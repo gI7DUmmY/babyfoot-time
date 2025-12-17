@@ -41,7 +41,7 @@ export function Events() {
   // tableau des events
   const data: Event[] = [
     {
-      date: new Date('2025-12-17T19:00'),
+      date: new Date('2025-12-21T19:00'),
       lieu: 'Au Carré des Sports',
       link: 'https://tally.so/r/xXXKAJ'
     }
