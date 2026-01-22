@@ -40,11 +40,11 @@ export function Events() {
 
   // tableau des events
   const data: Event[] = [
-    {
-      date: new Date('2026-01-21T19:00'),
-      lieu: 'Au Carré des Sports',
-      link: 'https://tally.so/r/xXXKAJ'
-    }
+    // {
+    //   date: new Date('2026-01-21T19:00'),
+    //   lieu: 'Au Carré des Sports',
+    //   link: 'https://tally.so/r/xXXKAJ'
+    // }
   ]
 
   // pastille events
