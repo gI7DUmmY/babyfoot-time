@@ -26,7 +26,7 @@ import Link from 'next/link'
 import { FaCalendarCheck } from 'react-icons/fa6'
 import { GiClick } from 'react-icons/gi'
 import { PiQuestionFill } from 'react-icons/pi'
-import { PiNumberCircleOneFill } from 'react-icons/pi'
+import { PiNumberCircleThreeFill } from 'react-icons/pi'
 
 export function Events() {
   interface Event {
@@ -67,8 +67,8 @@ export function Events() {
         </span>
       ) : (
         <span className='absolute flex h-6 w-6 -top-3 -right-4'>
-          <PiNumberCircleOneFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
-          <PiNumberCircleOneFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
+          <PiNumberCircleThreeFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
+          <PiNumberCircleThreeFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
         </span>
       )}
     </>
