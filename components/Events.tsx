@@ -46,7 +46,7 @@ export function Events() {
       link: 'https://tally.so/r/OD7jVY'
     },
     {
-      date: new Date('2026-02-18T19:00'),
+      date: new Date('2026-02-17T19:00'),
       lieu: 'Au Carré des Sports',
       link: 'https://tally.so/r/Xx4RzP'
     },
