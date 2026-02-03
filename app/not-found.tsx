@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import notFound from '/public/assets/images/404.svg'
+import notFound from '@/public/assets/images/404.svg'
 import { Button } from '@/components/ui/button'
 import { IoHome } from 'react-icons/io5'
 import { TbArrowBigDownLineFilled } from 'react-icons/tb'

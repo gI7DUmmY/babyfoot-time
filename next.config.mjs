@@ -4,16 +4,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'firebasestorage.googleapis.com',
-        port: '',
-      },
-      {
-        protocol: 'https',
         hostname: 'dcfrapzcynqcwwybaesu.supabase.co',
-        port: '',
-      },
-    ],
-  },
+        port: ''
+      }
+    ]
+  }
 }
 
 export default nextConfig
