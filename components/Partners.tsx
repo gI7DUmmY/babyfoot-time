@@ -86,6 +86,15 @@ const Partners = () => {
             className='h-auto w-28 md:h-auto md:w-36'
           />
         </Link>
+        <Link href='https://www.facebook.com/babyfoottv/' target='blank'>
+          <Image
+            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_babyfoot-tv_dark.png'
+            alt='logo ftbm'
+            width='512'
+            height='512'
+            className='h-auto w-28 md:h-auto md:w-36'
+          />
+        </Link>
       </div>
     </section>
   )
