@@ -5,21 +5,23 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaPeopleGroup } from 'react-icons/fa6'
 
-interface Partner {
-  id: string
-  nom: string
-  logo_src: string
-  url: string
-}
-
 const PartnersData = async () => {
+  interface Partner {
+    id: string
+    nom: string
+    logo_src: string
+    url: string
+  }
   const supabase = await createClient()
-  const { data: partners } = await supabase.from('partners').select()
+  const { data: partners } = await supabase
+    .from('partners')
+    .select()
+    .order('nom', { ascending: true })
 
   return (
     <>
       {partners?.map((partner: Partner) => (
-        <Link href={partner.url} target='blank' key={partner.id}>
+        <Link href={partner.url} target='_blank' key={partner.id}>
           <Image
             src={partner.logo_src}
             alt={partner.nom}
