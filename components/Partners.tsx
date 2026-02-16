@@ -5,6 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaPeopleGroup } from 'react-icons/fa6'
 
+export const revalidate = 60
+
 const PartnersData = async () => {
   interface Partner {
     id: string
