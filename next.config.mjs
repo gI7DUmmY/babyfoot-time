@@ -6,6 +6,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'dcfrapzcynqcwwybaesu.supabase.co',
         port: ''
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.babyfoot-time.fr',
+        port: ''
       }
     ]
   }

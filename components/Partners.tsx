@@ -1,6 +1,37 @@
+import { createClient } from '@/lib/supabase/server'
+import { Suspense } from 'react'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaPeopleGroup } from 'react-icons/fa6'
+
+interface Partner {
+  id: string
+  nom: string
+  logo_src: string
+  url: string
+}
+
+const PartnersData = async () => {
+  const supabase = await createClient()
+  const { data: partners } = await supabase.from('partners').select()
+
+  return (
+    <>
+      {partners?.map((partner: Partner) => (
+        <Link href={partner.url} target='blank' key={partner.id}>
+          <Image
+            src={partner.logo_src}
+            alt={partner.nom}
+            width='447'
+            height='677'
+            className='h-auto w-28 md:w-36'
+          />
+        </Link>
+      ))}
+    </>
+  )
+}
 
 const Partners = () => {
   return (
@@ -11,90 +42,9 @@ const Partners = () => {
         Nos partenaires
       </h3>
       <div className='w-full flex flex-row flex-wrap place-content-evenly items-center gap-4 lg:place-content-center lg:gap-12'>
-        <Link href='https://aufutetamesure.fr/' target='blank'>
-          <Image
-            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets//logo_fut.png'
-            alt='logo fut'
-            width='447'
-            height='677'
-            className='h-28 w-auto md:h-36'
-          />
-        </Link>
-        <Link href='https://www.b29toulouse.fr/' target='blank'>
-          <Image
-            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets//logo_b29.webp'
-            alt='logo b29'
-            width='512'
-            height='512'
-            className='h-28 w-auto md:h-36'
-          />
-        </Link>
-        <Link href='https://www.videostarjeux.com/' target='blank'>
-          <Image
-            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_le-star.png'
-            alt='logo ftbm'
-            width='512'
-            height='512'
-            className='h-auto w-28 md:h-auto md:w-36'
-          />
-        </Link>
-        <Link href='https://ffbabyfoot.fr/' target='blank'>
-          <Image
-            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_ffbf.svg'
-            alt='logo ffbf'
-            width='512'
-            height='512'
-            className='h-auto w-28 md:h-auto md:w-36'
-          />
-        </Link>
-        <Link href='https://babyfoot-ftbm.fr/' target='blank'>
-          <Image
-            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_ftbm.png'
-            alt='logo ftbm'
-            width='512'
-            height='512'
-            className='h-28 w-auto md:h-36'
-          />
-        </Link>
-        <Link
-          href='https://www.facebook.com/RagnarokBabyfootBoe'
-          target='blank'
-        >
-          <Image
-            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_ragnarok.png'
-            alt='logo ragnarok'
-            width='512'
-            height='512'
-            className='h-28 w-auto md:h-36'
-          />
-        </Link>
-        <Link href='https://lecarredessports.fr/' target='blank'>
-          <Image
-            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_carre-sports.png'
-            alt='logo carre des sports'
-            width='512'
-            height='512'
-            className='h-28 w-auto md:h-36'
-          />
-        </Link>
-        <Link href='https://www.espritbabyfoot.com/' target='blank'>
-          <Image
-            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_esprit.png'
-            alt='logo ftbm'
-            width='512'
-            height='512'
-            className='h-auto w-28 md:h-auto md:w-36'
-          />
-        </Link>
-        <Link href='https://www.facebook.com/babyfoottv/' target='blank'>
-          <Image
-            src='https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/logo_babyfoot-tv_dark.png'
-            alt='logo ftbm'
-            width='512'
-            height='512'
-            className='h-auto w-28 md:h-auto md:w-36'
-          />
-        </Link>
+        <Suspense fallback={<div>Loading instruments...</div>}>
+          <PartnersData />
+        </Suspense>
       </div>
     </section>
   )
