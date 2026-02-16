@@ -9,11 +9,12 @@ export const revalidate = 60
 
 const PartnersData = async () => {
   interface Partner {
-    id: string
+    id: number
     nom: string
     logo_src: string
     url: string
   }
+
   const supabase = await createClient()
   const { data: partners } = await supabase
     .from('partners')
