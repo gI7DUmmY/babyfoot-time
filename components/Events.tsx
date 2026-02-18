@@ -26,7 +26,7 @@ import Link from 'next/link'
 import { FaCalendarCheck } from 'react-icons/fa6'
 import { GiClick } from 'react-icons/gi'
 import { PiQuestionFill } from 'react-icons/pi'
-import { PiNumberCircleFourFill } from 'react-icons/pi'
+import { PiNumberCircleThreeFill } from 'react-icons/pi'
 
 export function Events() {
   interface Event {
@@ -40,11 +40,6 @@ export function Events() {
 
   // tableau des events
   const data: Event[] = [
-    {
-      date: new Date('2026-02-17T19:00'),
-      lieu: 'Au Carré des Sports',
-      link: 'https://tally.so/r/Xx4RzP'
-    },
     {
       date: new Date('2026-03-03T17:00'),
       lieu: 'Au Carré des Sports',
@@ -72,8 +67,8 @@ export function Events() {
         </span>
       ) : (
         <span className='absolute flex h-6 w-6 -top-3 -right-4'>
-          <PiNumberCircleFourFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
-          <PiNumberCircleFourFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
+          <PiNumberCircleThreeFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
+          <PiNumberCircleThreeFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
         </span>
       )}
     </>
