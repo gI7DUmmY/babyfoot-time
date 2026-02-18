@@ -77,7 +77,7 @@ const Feedback = () => {
       >
         <CarouselContent className='-ml-2 md:-ml-4'>
           {feedbackData &&
-            feedbackData.map((feed: Feedback) => (
+            feedbackData.map(feed => (
               <CarouselItem
                 key={feed.id}
                 className='md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4'

@@ -47,7 +47,7 @@ const Partners = () => {
         Nos partenaires
       </h3>
       <div className='w-full flex flex-row flex-wrap place-content-evenly items-center gap-4 lg:place-content-center lg:gap-12'>
-        <Suspense fallback={<div>Loading instruments...</div>}>
+        <Suspense fallback={<div>Chargement des partenaires...</div>}>
           <PartnersData />
         </Suspense>
       </div>
