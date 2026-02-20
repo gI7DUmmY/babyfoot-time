@@ -26,7 +26,7 @@ import {
 } from '@/components/ui/drawer'
 import { FaCalendarCheck } from 'react-icons/fa6'
 import PastilleEvents from '@/components/PastilleEvents'
-import DateEvents from './DateEevents'
+import DateEvents from './DateEvents'
 import Event from '@/types/Event'
 
 export const revalidate = 60
