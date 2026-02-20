@@ -25,8 +25,7 @@ import {
 import Link from 'next/link'
 import { FaCalendarCheck } from 'react-icons/fa6'
 import { GiClick } from 'react-icons/gi'
-import { PiQuestionFill } from 'react-icons/pi'
-import { PiNumberCircleThreeFill } from 'react-icons/pi'
+import PastilleEvents from './PastilleEvents'
 
 export function Events() {
   interface Event {
@@ -56,23 +55,6 @@ export function Events() {
       link: 'https://tally.so/r/OD7jVY'
     }
   ]
-
-  // pastille events
-  const nbEvents = (
-    <>
-      {data.length === 0 ? (
-        <span className='absolute flex h-6 w-6 -top-3 -right-4'>
-          <PiQuestionFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
-          <PiQuestionFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
-        </span>
-      ) : (
-        <span className='absolute flex h-6 w-6 -top-3 -right-4'>
-          <PiNumberCircleThreeFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
-          <PiNumberCircleThreeFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
-        </span>
-      )}
-    </>
-  )
 
   // affichage des events
   const datesEvents = (
@@ -122,7 +104,7 @@ export function Events() {
             className='border-orange2 p-3 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 hover:cursor-pointer md:p-6 md:text-4xl'
           >
             <div className='relative'>
-              {nbEvents}
+              <PastilleEvents num={data.length} />
               <div className='flex place-content-center items-baseline'>
                 <FaCalendarCheck className='mr-2 text-xl md:text-2xl' />
                 Venez à nos animations !
@@ -154,7 +136,7 @@ export function Events() {
           className='border-orange2 p-3 my-2 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
         >
           <div className='relative'>
-            {nbEvents}
+            <PastilleEvents num={data.length} />
             <div className='flex place-content-center items-baseline'>
               <FaCalendarCheck className='mr-2 text-xl md:text-4xl' />
               Venez à nos animations !
