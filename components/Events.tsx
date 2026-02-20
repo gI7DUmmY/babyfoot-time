@@ -63,18 +63,37 @@ export function Events() {
     fetchEvents()
   }, [])
 
+  // tableau des events
+  const data: Event[] = [
+    {
+      date: new Date('2026-03-03T17:00'),
+      lieu: 'Au Carré des Sports',
+      link: 'https://tally.so/r/pbD0Z8'
+    },
+    {
+      date: new Date('2026-03-11T19:00'),
+      lieu: 'Au Carré des Sports',
+      link: 'https://tally.so/r/ZjNNeo'
+    },
+    {
+      date: new Date('2026-03-21T19:00'),
+      lieu: 'Au Fût et À Mesure',
+      link: 'https://tally.so/r/OD7jVY'
+    }
+  ]
+
   // affichage des events
   const datesEvents = (
     <>
-      {eventsData.length === 0 && (
+      {data.length === 0 && (
         <p className='text-center'>Ici nos prochaines dates à venir !</p>
       )}
 
-      {eventsData.length > 0 && (
+      {data.length > 0 && (
         <ul className='flex flex-col items-center text-center gap-4 md:items-start md:text-left'>
-          {eventsData.map(eventsData => (
-            <li key={eventsData.date.toLocaleString()}>
-              {eventsData.date.toLocaleString('fr-FR', {
+          {data.map(data => (
+            <li key={data.date.toLocaleString()}>
+              {data.date.toLocaleString('fr-FR', {
                 day: 'numeric',
                 month: 'numeric',
                 year: 'numeric',
@@ -83,10 +102,10 @@ export function Events() {
                 timeZone: 'Europe/Paris'
               })}{' '}
               <span className='hidden md:inline'>:</span>
-              <br className='md:hidden' /> {eventsData.lieu}{' '}
+              <br className='md:hidden' /> {data.lieu}{' '}
               <br className='md:hidden' />
               <Link
-                href={eventsData.link}
+                href={data.link}
                 target='_blank'
                 className='ml-2 p-1 font-playfair text-xl text-orange2 animate-pulse hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
               >
@@ -111,7 +130,7 @@ export function Events() {
             className='border-orange2 p-3 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 hover:cursor-pointer md:p-6 md:text-4xl'
           >
             <div className='relative'>
-              <PastilleEvents num={eventsData.length} />
+              <PastilleEvents num={data.length} />
               <div className='flex place-content-center items-baseline'>
                 <FaCalendarCheck className='mr-2 text-xl md:text-2xl' />
                 Venez à nos animations !
@@ -143,7 +162,7 @@ export function Events() {
           className='border-orange2 p-3 my-2 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
         >
           <div className='relative'>
-            <PastilleEvents num={eventsData.length} />
+            <PastilleEvents num={data.length} />
             <div className='flex place-content-center items-baseline'>
               <FaCalendarCheck className='mr-2 text-xl md:text-4xl' />
               Venez à nos animations !
