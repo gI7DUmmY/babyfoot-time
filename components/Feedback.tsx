@@ -1,6 +1,7 @@
 'use client'
 
 import { createClient } from '@/lib/supabase/client'
+import Review from '@/types/Review'
 
 import {
   Carousel,
@@ -16,17 +17,12 @@ import { FaCircle } from 'react-icons/fa6'
 export const revalidate = 60
 
 const Feedback = () => {
-  interface Feedback {
-    id: number
-    quote: string
-    name: string
-  }
   const [api, setApi] = useState<CarouselApi>()
   const [current, setCurrent] = useState(0)
   const [count, setCount] = useState(0)
 
   const supabase = createClient()
-  const [feedbackData, setFeedbackData] = useState<Feedback[]>([])
+  const [feedbackData, setFeedbackData] = useState<Review[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {

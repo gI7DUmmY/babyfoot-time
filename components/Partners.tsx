@@ -4,17 +4,11 @@ import { Suspense } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaPeopleGroup } from 'react-icons/fa6'
+import Partner from '@/types/Partner'
 
 export const revalidate = 60
 
 const PartnersData = async () => {
-  interface Partner {
-    id: number
-    nom: string
-    logo_src: string
-    url: string
-  }
-
   const supabase = await createClient()
   const { data: partners } = await supabase
     .from('partners')

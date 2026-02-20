@@ -24,20 +24,14 @@ import {
   DrawerDescription,
   DrawerTrigger
 } from '@/components/ui/drawer'
-import Link from 'next/link'
 import { FaCalendarCheck } from 'react-icons/fa6'
-import { GiClick } from 'react-icons/gi'
 import PastilleEvents from '@/components/PastilleEvents'
+import DateEvents from './DateEevents'
+import Event from '@/types/Event'
 
 export const revalidate = 60
 
 export function Events() {
-  interface Event {
-    date: Date
-    lieu: string
-    link: string
-  }
-
   const [open, setOpen] = React.useState(false)
   const isDesktop = useMediaQuery('(min-width: 768px)')
 
@@ -63,62 +57,6 @@ export function Events() {
     fetchEvents()
   }, [])
 
-  // tableau des events
-  const data: Event[] = [
-    {
-      date: new Date('2026-03-03T17:00'),
-      lieu: 'Au Carré des Sports',
-      link: 'https://tally.so/r/pbD0Z8'
-    },
-    {
-      date: new Date('2026-03-11T19:00'),
-      lieu: 'Au Carré des Sports',
-      link: 'https://tally.so/r/ZjNNeo'
-    },
-    {
-      date: new Date('2026-03-21T19:00'),
-      lieu: 'Au Fût et À Mesure',
-      link: 'https://tally.so/r/OD7jVY'
-    }
-  ]
-
-  // affichage des events
-  const datesEvents = (
-    <>
-      {data.length === 0 && (
-        <p className='text-center'>Ici nos prochaines dates à venir !</p>
-      )}
-
-      {data.length > 0 && (
-        <ul className='flex flex-col items-center text-center gap-4 md:items-start md:text-left'>
-          {data.map(data => (
-            <li key={data.date.toLocaleString()}>
-              {data.date.toLocaleString('fr-FR', {
-                day: 'numeric',
-                month: 'numeric',
-                year: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit',
-                timeZone: 'Europe/Paris'
-              })}{' '}
-              <span className='hidden md:inline'>:</span>
-              <br className='md:hidden' /> {data.lieu}{' '}
-              <br className='md:hidden' />
-              <Link
-                href={data.link}
-                target='_blank'
-                className='ml-2 p-1 font-playfair text-xl text-orange2 animate-pulse hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
-              >
-                Je m'inscris !
-                <GiClick className='ml-2 inline align-middle' />
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
-    </>
-  )
-
   // version desktop > 768px
   if (isDesktop) {
     return (
@@ -130,7 +68,7 @@ export function Events() {
             className='border-orange2 p-3 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 hover:cursor-pointer md:p-6 md:text-4xl'
           >
             <div className='relative'>
-              <PastilleEvents num={data.length} />
+              <PastilleEvents num={eventsData.length} />
               <div className='flex place-content-center items-baseline'>
                 <FaCalendarCheck className='mr-2 text-xl md:text-2xl' />
                 Venez à nos animations !
@@ -144,7 +82,9 @@ export function Events() {
             <DialogTitle className='text-2xl text-center mt-2 mb-6'>
               Nos prochaines animations
             </DialogTitle>
-            <div className='text-xl lg:text-2xl'>{datesEvents}</div>
+            <div className='text-xl lg:text-2xl'>
+              <DateEvents events={eventsData} />
+            </div>
             <DialogDescription />
           </DialogHeader>
         </DialogContent>
@@ -162,7 +102,7 @@ export function Events() {
           className='border-orange2 p-3 my-2 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
         >
           <div className='relative'>
-            <PastilleEvents num={data.length} />
+            <PastilleEvents num={eventsData.length} />
             <div className='flex place-content-center items-baseline'>
               <FaCalendarCheck className='mr-2 text-xl md:text-4xl' />
               Venez à nos animations !
@@ -176,7 +116,9 @@ export function Events() {
           <DrawerTitle className='text-2xl text-center'>
             Nos prochaines animations
           </DrawerTitle>
-          <div className='text-xl my-4'>{datesEvents}</div>
+          <div className='text-xl my-4'>
+            <DateEvents events={eventsData} />
+          </div>
           <DrawerDescription />
         </DrawerHeader>
         <DrawerFooter className='pt-2'>
