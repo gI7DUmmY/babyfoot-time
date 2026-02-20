@@ -25,7 +25,7 @@ import {
 import Link from 'next/link'
 import { FaCalendarCheck } from 'react-icons/fa6'
 import { GiClick } from 'react-icons/gi'
-import PastilleEvents from './PastilleEvents'
+import PastilleEvents from '@/components/PastilleEvents'
 
 export function Events() {
   interface Event {
