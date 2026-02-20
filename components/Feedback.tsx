@@ -42,7 +42,6 @@ const Feedback = () => {
         setFeedbackData(feedback)
       }
       setLoading(false)
-      console.log(feedbackData)
     }
 
     fetchFeedback()

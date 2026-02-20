@@ -1,5 +1,7 @@
 'use client'
 
+import { createClient } from '@/lib/supabase/client'
+
 import * as React from 'react'
 
 import { useMediaQuery } from '@/hooks/use-media-query'
@@ -27,6 +29,8 @@ import { FaCalendarCheck } from 'react-icons/fa6'
 import { GiClick } from 'react-icons/gi'
 import PastilleEvents from '@/components/PastilleEvents'
 
+export const revalidate = 60
+
 export function Events() {
   interface Event {
     date: Date
@@ -36,6 +40,28 @@ export function Events() {
 
   const [open, setOpen] = React.useState(false)
   const isDesktop = useMediaQuery('(min-width: 768px)')
+
+  const supabase = createClient()
+  const [eventsData, setEventsData] = React.useState<Event[]>([])
+  const [loading, setLoading] = React.useState(true)
+
+  React.useEffect(() => {
+    const fetchEvents = async () => {
+      const { data: events, error } = await supabase
+        .from('events')
+        .select()
+        .order('date', { ascending: true })
+
+      if (error) {
+        console.error('Erreur lors de la récupération des données:', error)
+      } else {
+        setEventsData(events)
+      }
+      setLoading(false)
+    }
+
+    fetchEvents()
+  }, [])
 
   // tableau des events
   const data: Event[] = [
@@ -65,9 +91,9 @@ export function Events() {
 
       {data.length > 0 && (
         <ul className='flex flex-col items-center text-center gap-4 md:items-start md:text-left'>
-          {data.map(event => (
-            <li key={event.date.toLocaleString()}>
-              {event.date.toLocaleString('fr-FR', {
+          {data.map(eventsData => (
+            <li key={eventsData.date.toLocaleString()}>
+              {eventsData.date.toLocaleString('fr-FR', {
                 day: 'numeric',
                 month: 'numeric',
                 year: 'numeric',
@@ -76,10 +102,10 @@ export function Events() {
                 timeZone: 'Europe/Paris'
               })}{' '}
               <span className='hidden md:inline'>:</span>
-              <br className='md:hidden' /> {event.lieu}{' '}
+              <br className='md:hidden' /> {eventsData.lieu}{' '}
               <br className='md:hidden' />
               <Link
-                href={event.link}
+                href={eventsData.link}
                 target='_blank'
                 className='ml-2 p-1 font-playfair text-xl text-orange2 animate-pulse hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
               >
