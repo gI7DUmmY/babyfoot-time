@@ -13,9 +13,7 @@ import Autoplay from 'embla-carousel-autoplay'
 import { Card, CardContent } from './ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
 import { useState, useEffect } from 'react'
-import { Suspense } from 'react'
 import { FaCircle } from 'react-icons/fa6'
-import { Divide } from 'lucide-react'
 
 export const revalidate = 60
 

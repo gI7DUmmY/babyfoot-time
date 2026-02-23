@@ -2,7 +2,7 @@
 
 import { createClient } from '@/lib/supabase/client'
 
-import * as React from 'react'
+import { useEffect, useState } from 'react'
 
 import { useMediaQuery } from '@/hooks/use-media-query'
 import { Button } from '@/components/ui/button'
@@ -28,18 +28,19 @@ import { FaCalendarCheck } from 'react-icons/fa6'
 import PastilleEvents from '@/components/PastilleEvents'
 import DateEvents from './DateEvents'
 import Event from '@/types/Event'
+import { Skeleton } from '@/components/ui/skeleton'
 
 export const revalidate = 60
 
 export function Events() {
-  const [open, setOpen] = React.useState(false)
+  const [open, setOpen] = useState(false)
   const isDesktop = useMediaQuery('(min-width: 768px)')
 
   const supabase = createClient()
-  const [eventsData, setEventsData] = React.useState<Event[]>([])
-  const [loading, setLoading] = React.useState(true)
+  const [eventsData, setEventsData] = useState<Event[]>([])
+  const [loading, setLoading] = useState(true)
 
-  React.useEffect(() => {
+  useEffect(() => {
     const fetchEvents = async () => {
       const { data: events, error } = await supabase
         .from('events')
@@ -82,9 +83,17 @@ export function Events() {
             <DialogTitle className='text-2xl text-center mt-2 mb-6'>
               Nos prochaines animations
             </DialogTitle>
-            <div className='text-xl lg:text-2xl'>
-              <DateEvents events={eventsData} />
-            </div>
+
+            {loading ? (
+              Array.from({ length: 3 }).map((_, index) => (
+                <Skeleton className='h-4 w-full' key={index} />
+              ))
+            ) : (
+              <div className='text-xl lg:text-2xl'>
+                <DateEvents events={eventsData} />
+              </div>
+            )}
+
             <DialogDescription />
           </DialogHeader>
         </DialogContent>
@@ -113,12 +122,22 @@ export function Events() {
 
       <DrawerContent>
         <DrawerHeader className='text-left'>
-          <DrawerTitle className='text-2xl text-center'>
+          <DrawerTitle className='text-2xl text-center mb-3'>
             Nos prochaines animations
           </DrawerTitle>
-          <div className='text-xl my-4'>
-            <DateEvents events={eventsData} />
-          </div>
+
+          {loading ? (
+            <div className='w-full flex flex-col items-center gap-2'>
+              {Array.from({ length: 3 }).map((_, index) => (
+                <Skeleton className='h-4 w-3/4 text-center' key={index} />
+              ))}
+            </div>
+          ) : (
+            <div className='text-xl lg:text-2xl'>
+              <DateEvents events={eventsData} />
+            </div>
+          )}
+
           <DrawerDescription />
         </DrawerHeader>
         <DrawerFooter className='pt-2'>
