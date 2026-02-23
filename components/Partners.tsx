@@ -3,6 +3,7 @@ import { Suspense } from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { Skeleton } from '@/components/ui/skeleton'
 import { FaPeopleGroup } from 'react-icons/fa6'
 import Partner from '@/types/Partner'
 
@@ -40,8 +41,15 @@ const Partners = () => {
         <FaPeopleGroup className='inline mr-3 align-text-top pt-1' />
         Nos partenaires
       </h3>
-      <div className='w-full flex flex-row flex-wrap place-content-evenly items-center gap-4 lg:place-content-center lg:gap-12'>
-        <Suspense fallback={<div>Chargement des partenaires...</div>}>
+      <div className='w-full flex flex-row flex-wrap place-content-evenly items-center gap-6 lg:place-content-center lg:gap-12 lg:max-w-5xl lg:mx-auto'>
+        <Suspense
+          fallback={Array.from({ length: 9 }).map((_, index) => (
+            <Skeleton
+              className='size-14 shrink-0 rounded-full md:size-20 md:mx-8'
+              key={index}
+            />
+          ))}
+        >
           <PartnersData />
         </Suspense>
       </div>

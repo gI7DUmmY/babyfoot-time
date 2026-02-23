@@ -11,8 +11,11 @@ import {
 } from '@/components/ui/carousel'
 import Autoplay from 'embla-carousel-autoplay'
 import { Card, CardContent } from './ui/card'
+import { Skeleton } from '@/components/ui/skeleton'
 import { useState, useEffect } from 'react'
+import { Suspense } from 'react'
 import { FaCircle } from 'react-icons/fa6'
+import { Divide } from 'lucide-react'
 
 export const revalidate = 60
 
@@ -57,7 +60,18 @@ const Feedback = () => {
   }, [api])
 
   if (loading) {
-    return <p>Chargement...</p>
+    return (
+      <section className='w-full p-1 my-4 flex gap-4 lg:w-4/5 lg:mx-auto lg:max-w-5xl'>
+        {Array.from({ length: 3 }).map((_, index) => (
+          <div className='flex flex-col items-center gap-1 w-full' key={index}>
+            {Array.from({ length: 4 }).map((_, index) => (
+              <Skeleton className='h-4 w-32 md:w-40' key={index} />
+            ))}
+            <Skeleton className='h-4 w-14 mt-3 md:w-28' />
+          </div>
+        ))}
+      </section>
+    )
   }
 
   return (
