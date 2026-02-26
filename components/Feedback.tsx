@@ -82,12 +82,12 @@ const Feedback = () => {
         ]}
         setApi={setApi}
       >
-        <CarouselContent className='-ml-2 md:-ml-4'>
+        <CarouselContent className=''>
           {feedbackData &&
             feedbackData.map(feed => (
               <CarouselItem
                 key={feed.id}
-                className='md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4'
+                className='md:basis-1/2 lg:basis-1/3 pl-2 md:pl-12'
               >
                 <div className='p-1'>
                   <Card>
