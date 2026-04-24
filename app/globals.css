@@ -7,10 +7,10 @@
     --color-orange1: 252 151 0;
     --color-orange2: 255 145 77;
 
-    --background: 1 1 1;
+    --background: 0 0 0;
     --foreground: 255 255 255;
 
-    --card: 1 1 1;
+    --card: 0 0 0 0%;
     --card-foreground: 255 255 255;
 
     --popover: 0 0% 100%;
@@ -39,10 +39,10 @@
   }
 
   .dark {
-    --background: 1 1 1;
+    --background: 0 0 0;
     --foreground: 255 255 255;
 
-    --card: 1 1 1;
+    --card: 0 0 0 0%;
     --card-foreground: 255 255 255;
 
     --popover: 222.2 84% 4.9%;
@@ -84,31 +84,9 @@
   @apply text-orange1;
 }
 
-.parallax {
-  min-height: 400px;
-  @apply bg-fixed bg-no-repeat;
-}
-
-/* BG Accueil Desktop */
-@media (min-width: 1024px) {
-  #titre {
-    background-image: url('https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets//babyfoot-time-hi.webp');
-    @apply bg-center bg-cover;
-  }
-}
-
-/* BG Accueil Tablet */
-@media (min-width: 431px) and (max-width: 1024px) {
-  #titre {
-    background-image: url('https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets//babyfoot-time-hi_tablet.webp');
-    @apply bg-center bg-cover;
-  }
-}
-
-/* BG Accueil Smartphone */
-@media (max-width: 431px) {
-  #titre {
-    background-image: url('https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets//babyfoot-time-hi_mobile.webp');
-    @apply bg-contain;
-  }
+/* BG Services */
+#services {
+  background-image: url('https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/Stella8.jpeg');
+  /*min-height: 400px;*/
+  @apply bg-fixed bg-contain bg-no-repeat bg-center;
 }

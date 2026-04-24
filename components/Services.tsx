@@ -17,8 +17,8 @@ import { Events } from './Events'
 
 const Services = () => {
   return (
-    <section>
-      <div className='w-full pt-4 flex place-content-center sticky top-40 z-10 lg:top-60'>
+    <section id='services'>
+      <div className='w-full pt-4 flex place-content-center sticky top-40 z-10 bg-transparent lg:top-60'>
         <Events />
       </div>
       <div className='w-full flex flex-col flex-wrap place-content-evenly -z-10 lg:flex-row lg:justify-evenly'>
@@ -33,7 +33,10 @@ const Services = () => {
           <CardContent>
             <ul>
               <li>Team Building</li>
-              <li>after work organisé dans des bars et  restaurants partenaires en région toulousaine</li>
+              <li>
+                after work organisé dans des bars et restaurants partenaires en
+                région toulousaine
+              </li>
             </ul>
           </CardContent>
         </Card>
@@ -147,6 +150,7 @@ const Services = () => {
           </Link>
         </Button>
       </div>
+      <div className='w-2/3 border-b border-slate-400 mx-auto my-8 md:w-1/3' />
     </section>
   )
 }

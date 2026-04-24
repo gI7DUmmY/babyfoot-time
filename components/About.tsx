@@ -5,8 +5,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa'
 
 const About = () => {
   return (
-    <section className='w-full flex flex-col justify-center gap-2 p-1 my-8'>
-      <div className='w-2/3 border-b border-slate-400 mx-auto my-4 md:w-1/3' />
+    <section className='w-full flex flex-col justify-center gap-2 p-1'>
       <h3 className='mb-4 text-2xl font-playfair font-semibold leading-none tracking-tight text-orange2 uppercase text-center lg:text-4xl'>
         qui sommes-nous ?
       </h3>

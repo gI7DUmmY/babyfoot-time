@@ -35,8 +35,8 @@ const PartnersData = async () => {
 
 const Partners = () => {
   return (
-    <section className='w-full p-1 my-4 lg:mx-auto'>
-      <div className='w-2/3 border-t border-slate-400 mb-8 mx-auto md:w-1/3' />
+    <section className='w-full p-1 lg:mx-auto'>
+      <div className='w-2/3 border-t border-slate-400 my-8 mx-auto md:w-1/3' />
       <h3 className='mb-4 text-2xl font-playfair font-semibold leading-none tracking-tight text-orange2 uppercase text-center lg:text-4xl'>
         <FaPeopleGroup className='inline mr-3 align-text-top pt-1' />
         Nos partenaires
