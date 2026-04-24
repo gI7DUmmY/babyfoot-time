@@ -85,8 +85,7 @@
 }
 
 /* BG Services */
-#services {
+#feedback {
   background-image: url('https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/Stella8.jpeg');
-  @apply bg-origin-border bg-no-repeat bg-center;
-  background-attachment: fixed;
+  @apply bg-cover bg-no-repeat bg-center;
 }

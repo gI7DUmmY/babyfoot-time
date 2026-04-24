@@ -17,11 +17,11 @@ import { Events } from './Events'
 
 const Services = () => {
   return (
-    <section id='services'>
-      <div className='w-full pt-4 flex place-content-center sticky top-40 z-10 bg-transparent lg:top-60'>
+    <section className='mt-2 lg:mt-4'>
+      <div className='w-full pt-4 flex place-content-center sticky top-40 z-10 bg-transparent lg:top-64'>
         <Events />
       </div>
-      <div className='w-full flex flex-col flex-wrap place-content-evenly -z-10 lg:flex-row lg:justify-evenly'>
+      <div className='max-w-[2048px] mx-auto flex flex-col flex-wrap place-content-evenly -z-10 lg:flex-row lg:justify-evenly'>
         <Card className='max-w-prose'>
           <CardHeader>
             <CardTitle>

@@ -73,7 +73,7 @@ const Feedback = () => {
   }
 
   return (
-    <section className='w-full p-1 my-4 lg:w-4/5 lg:mx-auto'>
+    <section className='w-full my-4' id='feedback'>
       <Carousel
         plugins={[
           Autoplay({
@@ -81,8 +81,9 @@ const Feedback = () => {
           })
         ]}
         setApi={setApi}
+        className='backdrop-brightness-50 lg:w-11/12 lg:mx-auto'
       >
-        <CarouselContent className=''>
+        <CarouselContent>
           {feedbackData &&
             feedbackData.map(feed => (
               <CarouselItem
@@ -91,7 +92,7 @@ const Feedback = () => {
               >
                 <div className='p-1'>
                   <Card>
-                    <CardContent className='flex flex-col aspect-square items-center justify-evenly p-6 font-medium md:text-lg text-pretty'>
+                    <CardContent className='flex flex-col aspect-square items-center justify-evenly p-6 font-medium text-pretty md:text-lg'>
                       <blockquote>
                         <p>&laquo; {feed.quote} &raquo;</p>
                       </blockquote>
@@ -106,7 +107,7 @@ const Feedback = () => {
         </CarouselContent>
       </Carousel>
 
-      <div className='w-full flex flex-row justify-center gap-2'>
+      <div className='w-full pb-2 flex flex-row justify-center gap-2 backdrop-brightness-50'>
         {count > 2 &&
           api
             ?.scrollSnapList()
