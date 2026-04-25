@@ -68,6 +68,9 @@ const Services = () => {
             <p>
               une ou plusieurs tables bonzini b90 itsf (table officielle en
               compétition)
+              <br />
+              ou un stella champion xxl{' '}
+              <span className='whitespace-nowrap'>(8 joueurs)</span>
             </p>
           </CardContent>
         </Card>
@@ -150,7 +153,6 @@ const Services = () => {
           </Link>
         </Button>
       </div>
-      <div className='w-2/3 border-b border-slate-400 mx-auto my-8 md:w-1/3' />
     </section>
   )
 }
