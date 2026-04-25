@@ -1,5 +1,5 @@
-import type { Metadata } from 'next'
 import { playfair_display, playfair, lora } from './fonts'
+import type { Metadata } from 'next'
 import './globals.css'
 import Image from 'next/image'
 import banniere from '@/public/assets/images/banniere.svg'

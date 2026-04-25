@@ -55,7 +55,7 @@ const About = () => {
                 </p>
               </blockquote>
               <figcaption className='text-lg'>
-                <div className='text-transparent font-bold bg-clip-text bg-gradient-to-r from-orange2 to-orange1'>
+                <div className='text-transparent font-bold bg-clip-text bg-linear-to-r from-orange2 to-orange1'>
                   Laurent Fargues
                 </div>
                 <div className='text-slate-500'>Dirigeant, Babyfoot-Time</div>

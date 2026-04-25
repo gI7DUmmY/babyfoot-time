@@ -8,7 +8,7 @@ import { TbArrowBigDownLineFilled } from 'react-icons/tb'
 export default function NotFound() {
   return (
     <div className='w-screen h-screen pt-20 select-none text-center text-orange2 flex flex-col items-stretch gap-8'>
-      <h1 className='block uppercase font-display text-3xl lg:text-6xl'>
+      <h1 className='block uppercase font-playfair-display text-3xl lg:text-6xl'>
         oups page introuvable
       </h1>
       <Image
