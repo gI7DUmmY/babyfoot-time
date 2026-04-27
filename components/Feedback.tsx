@@ -93,10 +93,10 @@ const Feedback = () => {
                 <div className='p-1'>
                   <Card>
                     <CardContent className='flex flex-col aspect-square items-center justify-evenly p-6 font-medium text-pretty md:text-lg'>
-                      <blockquote>
+                      <blockquote className='text-shadow-sm/25 text-shadow-slate-300'>
                         <p>&laquo; {feed.quote} &raquo;</p>
                       </blockquote>
-                      <div className='text-slate-500 capitalize italic text-base mt-2 md:text-lg'>
+                      <div className='text-slate-500 capitalize italic text-base text-shadow-xs/25 text-shadow-white mt-2 md:text-lg'>
                         {feed.name}
                       </div>
                     </CardContent>
