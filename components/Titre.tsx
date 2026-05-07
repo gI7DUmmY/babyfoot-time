@@ -16,9 +16,10 @@ const Titre = () => {
       <div className='relative w-full h-[74.5vh] my-2 md:h-[69.7vh] lg:h-[70.3vh] xl:h-[79vh]'>
         <ReactPlayer
           src='https://www.tiktok.com/@babyfoot.time/video/7491012326083022102'
-          playing
-          loop
+          playing={true}
+          loop={true}
           muted={true}
+          controls={true}
           style={{ width: '100%', height: '100%', aspectRatio: '9/16' }}
           className='static'
         />
