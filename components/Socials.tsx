@@ -13,10 +13,7 @@ const Socials = () => {
     <section className='mx-auto lg:max-w-7xl lg:my-12'>
       <div className='w-2/3 border-t border-slate-400 mx-auto my-8 md:w-1/3' />
       <div className='my-8 flex flex-row justify-evenly text-orange1 text-5xl animate-pulse lg:my-16'>
-        <Link
-          href='https://www.facebook.com/share/DARysEJ88uewvzE8/'
-          target='_blank'
-        >
+        <Link href='https://www.facebook.com/babyfoot.time' target='_blank'>
           <FaSquareFacebook className='icon' />
         </Link>
         {/* <FaLinkedin className='icon' /> */}
