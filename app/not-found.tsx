@@ -28,7 +28,7 @@ export default function NotFound() {
           className='border-orange2 p-3 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-5xl'
         >
           <Link href='/'>
-            <IoHome className='mr-2 text-xl md:text-4xl' />
+            <IoHome className='mr-2 text-xl md:text-3xl' />
             Accueil
           </Link>
         </Button>

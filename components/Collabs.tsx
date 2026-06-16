@@ -6,7 +6,7 @@ import { Button } from './ui/button'
 
 const Collabs = () => {
   const urlCollab =
-    'https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/collabs/sethtwo/collab-sethtwo_01.jpeg'
+    'https://dcfrapzcynqcwwybaesu.supabase.co/storage/v1/object/public/assets/collabs/sethtwo/collab-sethtwo_00.png'
 
   return (
     <section className='w-full p-1 flex flex-col items-center gap-6 lg:mx-auto'>
@@ -20,16 +20,16 @@ const Collabs = () => {
         alt='image collaboration'
         width='640'
         height='800'
-        className='h-auto max-w-5xl skew-3 -rotate-3 border-2 border-orange1'
+        className='h-auto w-full max-w-5xl skew-3 -rotate-3 md:w-4/6 lg:w-5/12'
       />
       <Button
         variant='outline'
         asChild
-        className='border-orange2 p-3 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
+        className='border-orange2 p-3 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-3xl'
       >
         <Link href='/collabs' className='capitalize'>
-          <FaHandPointRight className='mr-2 text-xl md:text-4xl' />
-          Consultez nos collabs
+          <FaHandPointRight className='mr-2 text-xl md:text-3xl' />
+          Découvrez nos collabs
         </Link>
       </Button>
     </section>

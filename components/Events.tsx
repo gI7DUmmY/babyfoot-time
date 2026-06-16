@@ -66,7 +66,7 @@ export function Events() {
           <Button
             variant='outline'
             asChild
-            className='border-orange2 p-3 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 hover:cursor-pointer md:p-6 md:text-4xl'
+            className='border-orange2 p-3 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 hover:cursor-pointer md:p-6 md:text-3xl'
           >
             <div className='relative'>
               <PastilleEvents num={eventsData.length} />
@@ -108,12 +108,12 @@ export function Events() {
         <Button
           variant='outline'
           asChild
-          className='border-orange2 p-3 my-2 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
+          className='border-orange2 p-3 my-2 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 md:p-6 md:text-3xl'
         >
           <div className='relative'>
             <PastilleEvents num={eventsData.length} />
             <div className='flex place-content-center items-baseline'>
-              <FaCalendarCheck className='mr-2 text-xl md:text-4xl' />
+              <FaCalendarCheck className='mr-2 text-xl md:text-3xl' />
               Venez à nos animations !
             </div>
           </div>

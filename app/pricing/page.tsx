@@ -127,10 +127,10 @@ const page = () => {
         <Button
           variant='outline'
           asChild
-          className='border-orange2 p-3 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
+          className='border-orange2 p-3 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-3xl'
         >
           <Link href='/#maintenance'>
-            <TiArrowBack className='mr-2 text-xl md:text-4xl' />
+            <TiArrowBack className='mr-2 text-xl md:text-3xl' />
             Accueil
           </Link>
         </Button>
@@ -138,10 +138,10 @@ const page = () => {
         <Button
           variant='outline'
           asChild
-          className='border-orange2 p-3 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
+          className='border-orange2 p-3 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-3xl'
         >
           <Link href='https://tally.so/r/w4pxrd' target='_blank'>
-            <PiListChecksFill className='mr-2 text-xl md:text-4xl' />
+            <PiListChecksFill className='mr-2 text-xl md:text-3xl' />
             Devis à la carte
           </Link>
         </Button>

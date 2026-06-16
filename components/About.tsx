@@ -58,7 +58,9 @@ const About = () => {
                 <div className='text-transparent font-bold bg-clip-text bg-linear-to-r from-orange2 to-orange1'>
                   Laurent Fargues
                 </div>
-                <div className='text-slate-500'>Dirigeant, Babyfoot-Time</div>
+                <div className='text-slate-500' id='fonction'>
+                  Dirigeant, Babyfoot-Time
+                </div>
               </figcaption>
             </div>
           </figure>

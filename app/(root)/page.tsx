@@ -14,7 +14,7 @@ export default function Home() {
 
       <About />
 
-      {/*<Collabs />*/}
+      <Collabs />
 
       <Partners />
 

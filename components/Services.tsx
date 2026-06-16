@@ -162,10 +162,10 @@ const Services = () => {
         <Button
           variant='outline'
           asChild
-          className='border-orange2 p-3 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-4xl'
+          className='border-orange2 p-3 font-playfair text-2xl text-orange2 hover:text-background hover:bg-orange2 md:p-6 md:text-3xl'
         >
           <Link href='/pricing' className='capitalize'>
-            <FaHandPointRight className='mr-2 text-xl md:text-4xl' />
+            <FaHandPointRight className='mr-2 text-xl md:text-3xl' />
             Consultez nos tarifs
           </Link>
         </Button>
