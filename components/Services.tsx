@@ -31,7 +31,12 @@ const Services = () => {
             <CardDescription></CardDescription>
           </CardHeader>
           <CardContent>
-            <ul>
+            <ul className='md:hidden'>
+              <li>Team Building</li>
+              <li>After Work</li>
+              <li>Région Toulousaine</li>
+            </ul>
+            <ul className='hidden md:inline'>
               <li>Team Building</li>
               <li>
                 after work organisé dans des bars et restaurants partenaires en
@@ -48,30 +53,16 @@ const Services = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <ul>
+            <ul className='md:hidden'>
+              <li>s'amuser</li>
+              <li>partager</li>
+            </ul>
+            <ul className='hidden md:inline'>
               <li>s'amuser</li>
               <li>favoriser les échanges</li>
               <li>se défouler</li>
               <li>partager</li>
             </ul>
-          </CardContent>
-        </Card>
-
-        <Card className='max-w-prose'>
-          <CardHeader>
-            <CardTitle>
-              <IoTimer className='mx-auto' />
-              louez
-            </CardTitle>
-          </CardHeader>
-          <CardContent className='md:px-24'>
-            <p>
-              une ou plusieurs tables bonzini b90 itsf (table officielle en
-              compétition)
-              <br />
-              ou un stella champion xxl{' '}
-              <span className='whitespace-nowrap'>(8 joueurs)</span>
-            </p>
           </CardContent>
         </Card>
 
@@ -84,10 +75,38 @@ const Services = () => {
           </CardHeader>
           <CardContent>
             <ul>
-              <li>votre tournoi</li>
-              <li>des défis</li>
-              <li>des stages</li>
-              <li>du freeplay</li>
+              <li>tournoi</li>
+              <li>défis</li>
+              <li>stages</li>
+              <li>freeplay</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className='max-w-prose'>
+          <CardHeader>
+            <CardTitle>
+              <IoTimer className='mx-auto' />
+              louez
+            </CardTitle>
+          </CardHeader>
+          <CardContent className='md:px-24'>
+            <ul className='md:hidden'>
+              <li>tables bonzini b90 itsf</li>
+              <li>
+                un stella champion xxl{' '}
+                <span className='whitespace-nowrap'>(8 joueurs)</span>
+              </li>
+            </ul>
+            <ul className='hidden md:inline'>
+              <li>
+                une ou plusieurs tables bonzini b90 itsf (table officielle en
+                compétition)
+              </li>
+              <li>
+                ou un stella champion xxl{' '}
+                <span className='whitespace-nowrap'>(8 joueurs)</span>
+              </li>
             </ul>
           </CardContent>
         </Card>
@@ -102,9 +121,8 @@ const Services = () => {
           <CardContent>
             <ul>
               <li>transport</li>
-              <li>montage</li>
+              <li>montage/démontage</li>
               <li>réglages</li>
-              <li>démontage</li>
             </ul>
           </CardContent>
         </Card>
@@ -117,11 +135,10 @@ const Services = () => {
             </CardTitle>
           </CardHeader>
           <CardContent className='md:px-20'>
-            <p>
-              entretien/réparation de vos baby-foots sur Toulouse et ses
-              environs
-            </p>
-            <p>nettoyage/changement de pièces (tapis, ressorts, etc...)</p>
+            <ul>
+              <li>entretien/réparation sur Toulouse et ses environs</li>
+              <li>nettoyage/changement de pièces (tapis, ressorts, etc...)</li>
+            </ul>
           </CardContent>
         </Card>
 
