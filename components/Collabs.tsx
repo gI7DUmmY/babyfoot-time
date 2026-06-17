@@ -20,7 +20,7 @@ const Collabs = () => {
         alt='image collaboration'
         width='640'
         height='800'
-        className='h-auto w-10/12 max-w-5xl skew-3 -rotate-3 md:w-4/6 lg:w-5/12'
+        className='h-auto w-10/12 max-w-5xl skew-3 -rotate-3 md:w-4/6 lg:w-3/12'
       />
       <Button
         variant='outline'

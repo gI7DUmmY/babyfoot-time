@@ -37,7 +37,7 @@ const CollabsSethtwo = async () => {
         return (
           <figure
             key={f.id}
-            className='snap-center flex shrink-0 w-[80vw] md:w-[40vw] lg:w-[30vw] rounded-lg overflow-hidden bg-gray-100'
+            className='snap-center flex shrink-0 w-[80vw] rounded-lg overflow-hidden bg-background md:w-[40vw] lg:w-[30vw]'
           >
             <div className='relative w-full h-[60vh]'>
               <Image
@@ -46,6 +46,7 @@ const CollabsSethtwo = async () => {
                 fill
                 className='object-cover'
                 loading='eager'
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
           </figure>
