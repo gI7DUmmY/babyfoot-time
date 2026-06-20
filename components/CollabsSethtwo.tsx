@@ -29,7 +29,7 @@ const CollabsSethtwo = async () => {
 
   return (
     <div className='snap-x snap-mandatory scroll-ps-6 flex gap-4 overflow-x-auto p-4'>
-      {files.map(f => {
+      {files.map((f, index) => {
         const filePath = PREFIX.endsWith('/')
           ? `${PREFIX}${f.name}`
           : `${PREFIX}/${f.name}`
@@ -45,8 +45,9 @@ const CollabsSethtwo = async () => {
                 alt={f.name}
                 fill
                 className='object-cover'
-                loading='eager'
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                priority={index < 3 ? true : false}
+                loading={index < 3 ? 'eager' : 'lazy'}
+                sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
               />
             </div>
           </figure>
