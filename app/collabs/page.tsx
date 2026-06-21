@@ -5,7 +5,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 import { FaFaceGrinStars } from 'react-icons/fa6'
 import { SiHuggingface } from 'react-icons/si'
 import { TiArrowBack } from 'react-icons/ti'
-import CollabsSethtwo from '@/components/CollabsSethtwo'
+import CarouselCollab from '@/components/CarouselCollab'
 import { Button } from '@/components/ui/button'
 
 const page = () => {
@@ -21,7 +21,7 @@ const page = () => {
           <Skeleton className='w-[80vw] h-[60vh] md:w-[40vw] lg:w-[30vw] rounded-lg mx-auto' />
         }
       >
-        <CollabsSethtwo />
+        <CarouselCollab BUCKET='assets' PREFIX='collabs/sethtwo' />
       </Suspense>
 
       <div className='w-full flex justify-center mt-4'>
