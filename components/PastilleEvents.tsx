@@ -14,47 +14,47 @@ interface Props {
 }
 
 const PastilleEvents = ({ num }: Props) => {
-  return num === 1 ? (
+  return num + 1 === 1 ? (
     <span className='absolute flex h-6 w-6 -top-3 -right-4'>
       <PiNumberCircleOneFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
       <PiNumberCircleOneFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
     </span>
-  ) : num === 2 ? (
+  ) : num + 1 === 2 ? (
     <span className='absolute flex h-6 w-6 -top-3 -right-4'>
       <PiNumberCircleTwoFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
       <PiNumberCircleTwoFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
     </span>
-  ) : num === 3 ? (
+  ) : num + 1 === 3 ? (
     <span className='absolute flex h-6 w-6 -top-3 -right-4'>
       <PiNumberCircleThreeFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
       <PiNumberCircleThreeFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
     </span>
-  ) : num === 4 ? (
+  ) : num + 1 === 4 ? (
     <span className='absolute flex h-6 w-6 -top-3 -right-4'>
       <PiNumberCircleFourFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
       <PiNumberCircleFourFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
     </span>
-  ) : num === 5 ? (
+  ) : num + 1 === 5 ? (
     <span className='absolute flex h-6 w-6 -top-3 -right-4'>
       <PiNumberCircleFiveFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
       <PiNumberCircleFiveFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
     </span>
-  ) : num === 6 ? (
+  ) : num + 1 === 6 ? (
     <span className='absolute flex h-6 w-6 -top-3 -right-4'>
       <PiNumberCircleSixFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
       <PiNumberCircleSixFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
     </span>
-  ) : num === 7 ? (
+  ) : num + 1 === 7 ? (
     <span className='absolute flex h-6 w-6 -top-3 -right-4'>
       <PiNumberCircleSevenFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
       <PiNumberCircleSevenFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
     </span>
-  ) : num === 8 ? (
+  ) : num + 1 === 8 ? (
     <span className='absolute flex h-6 w-6 -top-3 -right-4'>
       <PiNumberCircleEightFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
       <PiNumberCircleEightFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
     </span>
-  ) : num === 9 ? (
+  ) : num + 1 === 9 ? (
     <span className='absolute flex h-6 w-6 -top-3 -right-4'>
       <PiNumberCircleNineFill className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange1 opacity-75' />
       <PiNumberCircleNineFill className='relative inline-flex rounded-full h-6 w-6 group-hover:text-orange1' />
