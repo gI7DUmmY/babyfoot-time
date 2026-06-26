@@ -1,6 +1,6 @@
-# BABYFOOT-TIME
+# BABY-FOOT TIME
 
-Le site web officiel de la société Française 🇫🇷 **Babyfoot-Time** ! "It's time to play!"
+Le site web officiel de la société Française 🇫🇷 **Baby-Foot Time** ! "It's time to play!"
 
 [www.babyfoot-time.fr](https://babyfoot-time.fr)
 
@@ -30,7 +30,7 @@ Avec plus de 15 ans d'exp&eacute;rience, Laurent Fargues est à la fois :
 
 ## 🇬🇧📝
 
-The official website of the French company 🇫🇷 **Babyfoot-Time**! "It's time to play!"
+The official website of the French company 🇫🇷 **Baby-Foot Time**! "It's time to play!"
 
 [www.babyfoot-time.fr](https://babyfoot-time.fr)
 
