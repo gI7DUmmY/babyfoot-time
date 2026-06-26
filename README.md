@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BABYFOOT-TIME
 
-## Getting Started
+Le site web officiel de la societe Francaise 🇫🇷 **Babyfoot-Time** ! "It's time to play!"
 
-First, run the development server:
+[www.babyfoot-time.fr](https://babyfoot-time.fr)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Une societe dirigee par Laurent Fargues aux multiples casquettes !
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Avec plus de 15 ans d'experience, Laurent Fargues est a la fois :
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  - dirigeant ✅
+  - joueur professionnel ✅
+  - coach sportif ✅
+  - animateur ✅
+  - restaurateur de babyfoots ✅
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+"Le baby-foot est une activité mixte, intergénérationnelle, ludique, originale et conviviale favorisant les échanges et le partage."
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Retrouvez sur ce site :
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  - le calendrier des animations 🗓️
+  - les prestations 💥
+  - les tarifs ou demander un devis personnalise 🔍
+  - les collaborations avec des artistes du street art 🎨
+  - les nombreux partenaires 🤝
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🇬🇧📝
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The official website of the French company 🇫🇷 **Babyfoot-Time**! "It's time to play!"
+
+[www.babyfoot-time.fr](https://babyfoot-time.fr)
+
+## A company led by Laurent Fargues with many roles!
+
+With over 15 years of experience, Laurent Fargues is both:
+
+- Managing director ✅
+- Foosball professional player ✅
+- Coach ✅
+- Host/animator ✅
+- Foosball tables repairs expert ✅
+
+"Foosball is a mixed, intergenerational, fun, original, friendly, engaging and sharing activity."
+
+## Find on this site:
+
+- The events/activities calendar 🗓️
+- Services/performances 💥
+- Prices or request a personalized quote 🔍
+- Collaborations with street art artists 🎨
+- Many partners 🤝
