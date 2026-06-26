@@ -1,5 +1,6 @@
 import { playfair_display, playfair, lora } from './fonts'
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import Image from 'next/image'
 import banniere from '@/public/assets/images/banniere.svg'
@@ -57,7 +58,10 @@ export default function RootLayout({
             className='mx-auto'
           />
         </header>
-        <main className='mt-36 md:mt-52 lg:mt-60'>{children}</main>
+        <main className='mt-36 md:mt-52 lg:mt-60'>
+          {children}
+          <Analytics />
+        </main>
         <footer className='text-center mt-4'>
           <Socials />
 
