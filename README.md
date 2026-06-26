@@ -1,13 +1,13 @@
 # BABYFOOT-TIME
 
-Le site web officiel de la societe Francaise 🇫🇷 **Babyfoot-Time** ! "It's time to play!"
+Le site web officiel de la société Française 🇫🇷 **Babyfoot-Time** ! "It's time to play!"
 
 [www.babyfoot-time.fr](https://babyfoot-time.fr)
 
 
-## Une societe dirigee par Laurent Fargues aux multiples casquettes !
+## Une société dirigée par Laurent Fargues aux multiples casquettes !
 
-Avec plus de 15 ans d'experience, Laurent Fargues est a la fois :
+Avec plus de 15 ans d'exp&eacute;rience, Laurent Fargues est à la fois :
 
   - dirigeant ✅
   - joueur professionnel ✅
@@ -22,7 +22,7 @@ Avec plus de 15 ans d'experience, Laurent Fargues est a la fois :
 
   - le calendrier des animations 🗓️
   - les prestations 💥
-  - les tarifs ou demander un devis personnalise 🔍
+  - les tarifs ou demandez un devis personnalisé 🔍
   - les collaborations avec des artistes du street art 🎨
   - les nombreux partenaires 🤝
 
