@@ -25,6 +25,7 @@ Avec plus de 15 ans d'exp&eacute;rience, Laurent Fargues est à la fois :
   - les tarifs ou demandez un devis personnalisé 🔍
   - les collaborations avec des artistes du street art 🎨
   - les nombreux partenaires 🤝
+  - liens des réseaux sociaux/contacter
 
 ---
 
@@ -36,7 +37,7 @@ The official website of the French company 🇫🇷 **Baby-Foot Time**! "It's ti
 
 ## A company led by Laurent Fargues with many roles!
 
-With over 15 years of experience, Laurent Fargues is both:
+With over 15 years of experience, Laurent Fargues is :
 
 - Managing director ✅
 - Foosball professional player ✅
@@ -48,8 +49,9 @@ With over 15 years of experience, Laurent Fargues is both:
 
 ## Find on this site:
 
-- The events/activities calendar 🗓️
+- The events/activities agenda 🗓️
 - Services/performances 💥
-- Prices or request a personalized quote 🔍
+- Prices or request a customized quote 🔍
 - Collaborations with street art artists 🎨
 - Many partners 🤝
+- socials/contacts
