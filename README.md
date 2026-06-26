@@ -25,7 +25,7 @@ Avec plus de 15 ans d'exp&eacute;rience, Laurent Fargues est à la fois :
   - les tarifs ou demandez un devis personnalisé 🔍
   - les collaborations avec des artistes du street art 🎨
   - les nombreux partenaires 🤝
-  - liens des réseaux sociaux/contacter
+  - liens des réseaux sociaux/contacter 🔗
 
 ---
 
@@ -54,4 +54,4 @@ With over 15 years of experience, Laurent Fargues is :
 - Prices or request a customized quote 🔍
 - Collaborations with street art artists 🎨
 - Many partners 🤝
-- socials/contacts
+- socials/contacts 🔗
