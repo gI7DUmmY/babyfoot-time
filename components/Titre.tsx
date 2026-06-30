@@ -13,13 +13,36 @@ const Titre = () => {
         <span className='text-orange1'>baby-foot</span>
       </h1>
 
-      <div className='relative w-full h-[74.5vh] my-2 md:h-[69.7vh] lg:h-[70.3vh] xl:h-[79vh]'>
+      <div className='relative w-full h-[74.5vh] my-2 md:hidden'>
         <ReactPlayer
-          src='https://www.tiktok.com/@babyfoot.time/video/7491012326083022102'
+          src='https://www.tiktok.com/@babyfoot.time/video/7657235110927846689'
+          controls
+          preload='auto'
+          playsInline
+          autoPlay
+          loop
+          muted
+          style={{ width: '100%', height: '100%', aspectRatio: '9/16' }}
+          className='static'
+        />
+
+        <Image
+          src={event}
+          alt='event'
+          sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+          className='absolute top-0 left-[33%] h-1/4 w-auto md:left-[38%] lg:left-[42%] xl:left-[40%]'
+        />
+      </div>
+
+      <div className='hidden relative w-full my-2 md:block md:h-[69.7vh] lg:h-[70.3vh] xl:h-[79vh]'>
+        <ReactPlayer
+          src='https://www.tiktok.com/@babyfoot.time/video/7656481717879934240'
           playing={true}
-          loop={true}
-          muted={true}
-          controls={true}
+          preload='auto'
+          playsInline
+          loop
+          muted
+          controls
           style={{ width: '100%', height: '100%', aspectRatio: '9/16' }}
           className='static'
         />
