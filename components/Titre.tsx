@@ -22,6 +22,20 @@ const Titre = () => {
           autoPlay
           loop
           muted
+          config={{
+            tiktok: {
+              fullscreen_button: true,
+              progress_bar: true,
+              play_button: true,
+              volume_control: true,
+              timestamp: false,
+              music_info: false,
+              description: false,
+              rel: false,
+              native_context_menu: true,
+              closed_caption: false
+            }
+          }}
           style={{ width: '100%', height: '100%', aspectRatio: '9/16' }}
           className='static'
         />
@@ -42,6 +56,20 @@ const Titre = () => {
           playsInline
           loop
           muted
+          config={{
+            tiktok: {
+              fullscreen_button: true,
+              progress_bar: true,
+              play_button: true,
+              volume_control: true,
+              timestamp: false,
+              music_info: false,
+              description: false,
+              rel: false,
+              native_context_menu: true,
+              closed_caption: false
+            }
+          }}
           controls
           style={{ width: '100%', height: '100%', aspectRatio: '9/16' }}
           className='static'
