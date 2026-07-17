@@ -34,13 +34,13 @@ const Services = () => {
             <ul className='md:hidden'>
               <li>Team Building</li>
               <li>After Work</li>
-              <li>Région Toulousaine</li>
+              <li>En Occitanie</li>
             </ul>
             <ul className='hidden md:inline'>
               <li>Team Building</li>
               <li>
                 after work organisé dans des bars et restaurants partenaires en
-                région toulousaine
+                Occitanie
               </li>
             </ul>
           </CardContent>
@@ -136,7 +136,7 @@ const Services = () => {
           </CardHeader>
           <CardContent className='md:px-20'>
             <ul>
-              <li>entretien/réparation sur Toulouse et ses environs</li>
+              <li>entretien/réparation en Occitanie</li>
               <li>nettoyage/changement de pièces (tapis, ressorts, etc...)</li>
             </ul>
           </CardContent>
