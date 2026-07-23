@@ -18,7 +18,7 @@ const Socials = () => {
         </Link>
         {/* <FaLinkedin className='icon' /> */}
         <Link
-          href='https://www.instagram.com/babyfoot.time?igsh=MWlydWRsMGJlYWtpZw=='
+          href='https://www.instagram.com/babyfoot.time?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
           target='_blank'
         >
           <FaSquareInstagram className='icon' />
