@@ -19,7 +19,7 @@ const DateEvents = ({ events }: Props) => {
       <br className='md:hidden' /> À St Sulpice{' '}
       <br className='md:hidden' />
       <Link
-        href='https://maps.app.goo.gl/hEKEE5rzXWZGVEoX8'
+        href='https://tally.so/r/xX75Er'
         target='_blank'
         className='ml-2 p-1 font-playfair text-xl text-orange2 animate-pulse hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
       >
@@ -65,7 +65,7 @@ const DateEvents = ({ events }: Props) => {
               <br className='md:hidden' /> À St Sulpice{' '}
               <br className='md:hidden' />
               <Link
-                href='https://maps.app.goo.gl/hEKEE5rzXWZGVEoX8'
+                href='https://tally.so/r/xX75Er'
                 target='_blank'
                 className='ml-2 p-1 font-playfair text-xl text-orange2 animate-pulse hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
               >
