@@ -69,7 +69,8 @@ export function Events() {
             className='border-orange2 p-3 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 hover:cursor-pointer md:p-6 md:text-3xl'
           >
             <div className='relative'>
-              <PastilleEvents num={eventsData.length} />
+              {/* +1 event temporaire : la fete du jeu */}
+              <PastilleEvents num={eventsData.length + 1} />
               <div className='flex place-content-center items-baseline'>
                 <FaCalendarCheck className='mr-2 text-xl md:text-2xl' />
                 Venez à nos animations !
@@ -111,7 +112,8 @@ export function Events() {
           className='border-orange2 p-3 my-2 font-playfair text-2xl text-orange2 group hover:text-background hover:bg-orange2 md:p-6 md:text-3xl'
         >
           <div className='relative'>
-            <PastilleEvents num={eventsData.length} />
+            {/* +1 event temporaire : la fete du jeu */}
+            <PastilleEvents num={eventsData.length + 1} />
             <div className='flex place-content-center items-baseline'>
               <FaCalendarCheck className='mr-2 text-xl md:text-3xl' />
               Venez à nos animations !
