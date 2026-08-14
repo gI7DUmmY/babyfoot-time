@@ -9,7 +9,25 @@ interface Props {
 
 const DateEvents = ({ events }: Props) => {
   return events.length === 0 ? (
-    <p className='text-center'>Ici nos prochaines dates à venir !</p>
+    // paragraphe a decommenter :
+    // <p className='text-center'>Ici nos prochaines dates à venir !</p>
+    //
+    //
+    // paragraphe temporaire fete du jeu
+    <p>
+      14/11/2026 de 10h à 20h <span className='hidden md:inline'>:</span>
+      <br className='md:hidden' /> À St Sulpice{' '}
+      <br className='md:hidden' />
+      <Link
+        href='https://maps.app.goo.gl/hEKEE5rzXWZGVEoX8'
+        target='_blank'
+        className='ml-2 p-1 font-playfair text-xl text-orange2 animate-pulse hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
+      >
+        Itinéraire
+        <GiClick className='ml-2 inline align-middle' />
+      </Link>
+    </p>
+    // fin paragraphe temporaire
   ) : (
     <>
       {events.length > 0 && (
@@ -40,6 +58,22 @@ const DateEvents = ({ events }: Props) => {
                 </li>
               )
             })}
+
+            {/* ajout temporaire fete du jeu*/}
+            <li>
+              14/11/2026 de 10h à 20h <span className='hidden md:inline'>:</span>
+              <br className='md:hidden' /> À St Sulpice{' '}
+              <br className='md:hidden' />
+              <Link
+                href='https://maps.app.goo.gl/hEKEE5rzXWZGVEoX8'
+                target='_blank'
+                className='ml-2 p-1 font-playfair text-xl text-orange2 animate-pulse hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
+              >
+                Itinéraire
+                <GiClick className='ml-2 inline align-middle' />
+              </Link>
+            </li>
+            {/* fin ajout temporaire */}
           </ul>
       )}
     </>
