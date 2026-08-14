@@ -23,7 +23,7 @@ const DateEvents = ({ events }: Props) => {
         target='_blank'
         className='ml-2 p-1 font-playfair text-xl text-orange2 animate-pulse hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
       >
-        Itinéraire
+        Infos
         <GiClick className='ml-2 inline align-middle' />
       </Link>
     </p>
@@ -69,7 +69,7 @@ const DateEvents = ({ events }: Props) => {
                 target='_blank'
                 className='ml-2 p-1 font-playfair text-xl text-orange2 animate-pulse hover:text-background hover:bg-orange2 hover:rounded-2xl lg:text-3xl'
               >
-                Itinéraire
+                Infos
                 <GiClick className='ml-2 inline align-middle' />
               </Link>
             </li>
