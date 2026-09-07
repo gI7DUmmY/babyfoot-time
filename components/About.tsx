@@ -21,17 +21,16 @@ const About = () => {
           </p>
           <p className='my-4'>
             Habitué à coacher, fédérer et animer grâce à plus de 15 ans
-            d'expérience de coach sportif et ayant repris la compétition au sein
-            du{' '}
+            d'expérience de coach sportif et représentant les couleurs du{' '}
             <Link
-              href='https://babyfoot-ftbm.fr/'
+              href='https://www.facebook.com/RagnarokBabyfootBoe'
               target='_blank'
               className='lien-ext'
             >
-              club FTBM{' '}
+              club d'Agen-Boé{' '}
               <FaExternalLinkAlt className='inline mx-1 text-sm align-baseline' />
             </Link>{' '}
-            à haut niveau depuis quelques années, j'ai aujourd'hui à coeur de
+            en tant que joueur pro sur les compétitions officielles, j'ai aujourd'hui à coeur de
             partager ma passion et promouvoir ainsi le baby-foot sportif et
             loisir au travers d'animations personnalisées conviviales.
           </p>
